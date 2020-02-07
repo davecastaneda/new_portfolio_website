@@ -1,0 +1,22 @@
+{
+  "name": "new_portfolio_website",
+  "version": "1.0.0",
+  "description": "Responsive Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "echo \"Sass text\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davecastaneda/new_portfolio_website.git"
+  },
+  "author": "Dave Castaneda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davecastaneda/new_portfolio_website/issues"
+  },
+  "homepage": "https://github.com/davecastaneda/new_portfolio_website#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
