@@ -4,7 +4,7 @@
   "description": "Responsive Portfolio Website",
   "main": "index.js",
   "scripts": {
-    "sass": "echo \"Sass text\""
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "repository": {
     "type": "git",
