@@ -46,6 +46,12 @@
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
+    .menu-nav .portrait {
+      width: 250px;
+      height: 250px;
+      background: url("../img/portrait.jpg");
+      border-radius: 50%;
+      border: solid 3px #eece1a; }
 
 * {
   box-sizing: border-box; }
