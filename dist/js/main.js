@@ -31,3 +31,4 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+// TODO: change the double quotes to single quotes
