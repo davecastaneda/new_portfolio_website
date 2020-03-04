@@ -24,10 +24,12 @@
       &:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
       }
+
       // Line 2 - Hide
       &:nth-child(2) {
         opacity: 0;
       }
+
       // Line 3 - Rotate
       &:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
@@ -62,7 +64,9 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: rgba(darken($primary-color, 5), 0.9);
+    background: rgba(darken($primary-color, 12), 0.97);
+    // background: rgba(darken($primary-color, 5), 0.9);
+    // background: darken($primary-color, 5);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -85,11 +89,11 @@
     }
 
     .portrait {
-      width: 250px;
-      height: 250px;
+      width: 262px;
+      height: 262px;
       background: url("../img/portrait.jpg");
       border-radius: 50%;
-      border: solid 3px $secondary-color;
+      border: solid 4px $secondary-color;
     }
   }
 
@@ -110,7 +114,7 @@
   .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
+    font-size: 35px;
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
@@ -119,7 +123,7 @@
     @include easeOut;
 
     &:hover {
-      color: $secondary-color;
+      color: $tertiary-color;
     }
   }
 }

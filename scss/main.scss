@@ -55,12 +55,13 @@ main {
 
   .icons {
     margin-top: 1rem;
+
     a {
       padding: 0.4rem;
+      @include easeOut();
 
       &:hover {
-        color: $secondary-color;
-        @include easeOut();
+        color: $tertiary-color;
       }
     }
   }
@@ -85,12 +86,12 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: $secondary-color 3px solid;
+    border: $secondary-color 4px solid;
   }
 
   .bio {
     grid-area: bio;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .job-1 {
@@ -106,16 +107,16 @@ main {
   }
 
   .job {
-    background: lighten($primary-color, 5);
+    background: lighten($primary-color, 6);
     padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+    border-bottom: $tertiary-color 3px solid;
   }
 }
 
 // Work/Projects
 .projects {
   display: grid;
-  gap: 0.7rem;
+  gap: 0.86rem;
   grid-template-columns: repeat(3, 1fr);
 
   img {
@@ -123,8 +124,8 @@ main {
     border: 3px #fff solid;
 
     &:hover {
-      opacity: 0.5;
-      border-color: $secondary-color;
+      opacity: 0.6;
+      border-color: $tertiary-color;
       @include easeOut;
     }
   }
@@ -139,19 +140,19 @@ main {
   margin-top: 1rem;
 
   div {
-    font-size: 2rem;
-    border: 3px #fff solid;
+    font-size: 1.6rem;
+    border: 2px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     @include easeOut;
 
     &:hover {
       padding: 0.5rem 1.5rem;
-      background: $secondary-color;
+      background: $tertiary-color;
       color: set-text-color($secondary-color);
 
       span {
-        color: set-text-color($secondary-color);
+        color: set-text-color($tertiary-color);
       }
     }
   }
@@ -165,8 +166,8 @@ main {
   margin-bottom: 0.3rem;
 
   &:hover {
-    background: $secondary-color;
-    color: set-text-color($secondary-color);
+    background: $tertiary-color;
+    color: set-text-color($tertiary-color);
   }
 }
 
