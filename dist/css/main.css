@@ -4,13 +4,13 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 0.5s ease-out; }
+  transition: all 0.556s ease-out; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #fff;
-    transition: all 0.5s ease-out; }
+    transition: all 0.556s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -42,13 +42,13 @@
     background: rgba(29, 31, 32, 0.97);
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.556s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     background: rgba(58, 62, 64, 0.9);
     transform: translate3d(0, 100%, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.556s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
@@ -56,10 +56,10 @@
       height: 262px;
       background: url("../img/portrait.jpg");
       border-radius: 50%;
-      border: solid 4px #06f0ce; }
+      border: solid 2.5px #06f0ce; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.556s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
@@ -73,7 +73,7 @@
     font-weight: 300;
     color: #fff;
     text-decoration: none;
-    transition: all 0.5s ease-out; }
+    transition: all 0.556s ease-out; }
     .menu .nav-link:hover {
       color: #ce06f0; }
 
@@ -127,7 +127,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(63, 67, 69, 0.5); }
+    background: rgba(70, 75, 77, 0.5); }
 
 a {
   color: #fff;
@@ -148,7 +148,7 @@ main {
     margin-top: 1rem; }
     main .icons a {
       padding: 0.4rem;
-      transition: all 0.5s ease-out; }
+      transition: all 0.556s ease-out; }
       main .icons a:hover {
         color: #ce06f0; }
   main#home {
@@ -165,7 +165,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #06f0ce 4px solid; }
+    border: #06f0ce 2.5px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.4rem; }
@@ -190,7 +190,7 @@ main {
     .projects img:hover {
       opacity: 0.6;
       border-color: #ce06f0;
-      transition: all 0.5s ease-out; }
+      transition: all 0.556s ease-out; }
 
 .boxes {
   display: flex;
@@ -203,7 +203,7 @@ main {
     border: 2px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
-    transition: all 0.5s ease-out; }
+    transition: all 0.556s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
       background: #ce06f0;
@@ -223,12 +223,12 @@ main {
 .btn-dark {
   background: black;
   color: #fff;
-  transition: all 0.5s ease-out; }
+  transition: all 0.556s ease-out; }
 
 .btn-light {
-  background: #b9bec0;
+  background: #d4d7d8;
   color: #333;
-  transition: all 0.5s ease-out; }
+  transition: all 0.556s ease-out; }
 
 #main-footer {
   text-align: center;

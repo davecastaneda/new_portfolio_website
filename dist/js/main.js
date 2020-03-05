@@ -1,11 +1,11 @@
-// Select DOM Items
+// DOM Items
 const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-item");
 
-//Set initial State of Menu
+// This sets the Menu's initial state
 let showMenu = false;
 
 menuBtn.addEventListener("click", toggleMenu);
@@ -18,7 +18,7 @@ function toggleMenu() {
     menuBranding.classList.add("show");
     navItems.forEach(item => item.classList.add("show"));
 
-    // Set Menu State
+    // This sets the Menu's active state
     showMenu = true;
   } else {
     menuBtn.classList.remove("close");
@@ -27,8 +27,7 @@ function toggleMenu() {
     menuBranding.classList.remove("show");
     navItems.forEach(item => item.classList.remove("show"));
 
-    // Set Menu State
+    // This resets the Menu's state
     showMenu = false;
   }
 }
-// TODO: change the double quotes to single quotes

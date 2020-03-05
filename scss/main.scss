@@ -29,7 +29,7 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
+    background: rgba(lighten($primary-color, 5), 0.5);
   }
 }
 
@@ -86,7 +86,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: $secondary-color 4px solid;
+    border: $secondary-color 2.5px solid;
   }
 
   .bio {
@@ -149,7 +149,7 @@ main {
     &:hover {
       padding: 0.5rem 1.5rem;
       background: $tertiary-color;
-      color: set-text-color($secondary-color);
+      color: set-text-color($tertiary-color);
 
       span {
         color: set-text-color($tertiary-color);
@@ -173,14 +173,14 @@ main {
 
 .btn-dark {
   @extend .btn;
-  background: darken($primary-color, 50);
+  background: darken($primary-color, 40);
   color: #fff;
   @include easeOut;
 }
 
 .btn-light {
   @extend .btn;
-  background: lighten($primary-color, 50);
+  background: lighten($primary-color, 60);
   color: #333;
   @include easeOut;
 }

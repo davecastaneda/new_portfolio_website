@@ -1,29 +1,17 @@
 $primary-color: #3a3e40;
 $secondary-color: #06f0ce;
-
-// Below are Triad Colors
 $tertiary-color: #ce06f0;
-$quaternary-color: #f0ce06;
-
-// Below are the Split Complimentary Colors
-$senary-color: #f0069c;
-$septenary-color: #f05906;
-
-// Below is the Complimentary Color
-$octonary-color: #f00627;
-
-// Below are Analogous Colors
-$nonary-color: #069cf0;
-$denary-color: #06f059;
-
-$additional-color: #027363;
 
 $show-home-image: true;
 $home-image: url(/dist/img/background.jpg);
 $background-opacity: 0.78;
 
+// $show-subtle-pattern: true;
+// $subtle-pattern: url(/dist/img/ptn.jpg);
+// $secondary-background-opacity: 0.89;
+
 @mixin easeOut {
-  transition: all 0.5s ease-out;
+  transition: all 0.556s ease-out;
 }
 
 @mixin background {
@@ -45,6 +33,25 @@ $background-opacity: 0.78;
       }
     }
   }
+
+  // @if $show-subtle-pattern {
+  //   &#ptn-img {
+  //     background: $subtle-pattern;
+  //     background-attachment: fixed;
+  //     background-size: inherit;
+  //   }
+
+  //   &:after {
+  //     content: "";
+  //     position: absolute;
+  //     top: 0;
+  //     right: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //     z-index: -1;
+  //     background: rgba($primary-color, $secondary-background-opacity);
+  //   }
+  // }
 }
 
 // Set Text Color
