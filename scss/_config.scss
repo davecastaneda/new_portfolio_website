@@ -1,17 +1,14 @@
 $primary-color: #3a3e40;
 $secondary-color: #06f0ce;
 $tertiary-color: #ce06f0;
-
 $show-home-image: true;
 $home-image: url(/dist/img/background.jpg);
 $background-opacity: 0.78;
-
-// $show-subtle-pattern: true;
-// $subtle-pattern: url(/dist/img/ptn.jpg);
-// $secondary-background-opacity: 0.89;
+$portrait-full: url(/dist/img/portrait_resize.jpg);
+$portrait-small: url(/dist/img/portrait_small.jpg);
 
 @mixin easeOut {
-  transition: all 0.556s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 @mixin background {
@@ -33,25 +30,6 @@ $background-opacity: 0.78;
       }
     }
   }
-
-  // @if $show-subtle-pattern {
-  //   &#ptn-img {
-  //     background: $subtle-pattern;
-  //     background-attachment: fixed;
-  //     background-size: inherit;
-  //   }
-
-  //   &:after {
-  //     content: "";
-  //     position: absolute;
-  //     top: 0;
-  //     right: 0;
-  //     width: 100%;
-  //     height: 100%;
-  //     z-index: -1;
-  //     background: rgba($primary-color, $secondary-background-opacity);
-  //   }
-  // }
 }
 
 // Set Text Color
