@@ -29,6 +29,8 @@ h5 {
 
   &.lg-heading {
     font-size: 5rem;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.6);
+    // text-shadow: 4px 3px 0 #403c3a;
     // text-shadow: 33px 22px 2px 2px #191919;
   }
 
@@ -36,8 +38,9 @@ h5 {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 11), 0.7);
-    box-shadow: 0 11px 13px 0 rgba(0, 0, 0, 0.24),
-      0 15px 40px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.49);
+    box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.49);
   }
 }
 
@@ -150,15 +153,22 @@ main {
 
   img {
     width: 100%;
-    border: 2.5px rgba(0, 0, 0, 0.63) solid;
-    -webkit-box-shadow: 12px 11px 4px -3px rgba(0, 0, 0, 0.63);
-    -moz-box-shadow: 12px 11px 4px -3px rgba(0, 0, 0, 0.63);
-    box-shadow: 12px 11px 4px -3px rgba(0, 0, 0, 0.63);
+    // border: 2.5px rgba(0, 0, 0, 0.63) solid;
+    // -webkit-box-shadow: 12px 11px 4px -3px rgba(0, 0, 0, 0.63);
+    // -moz-box-shadow: 12px 11px 4px -3px rgba(0, 0, 0, 0.63);
+    // box-shadow: 12px 11px 4px -3px rgba(0, 0, 0, 0.63);
+
+    -moz-box-shadow: rgb(0, 0, 0) 0px 10px 13px -7px,
+      6px 3px 8px 2px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: rgb(0, 0, 0) 0px 10px 13px -7px,
+      6px 3px 8px 2px rgba(0, 0, 0, 0);
+    box-shadow: rgb(0, 0, 0) 0px 10px 13px -7px,
+      6px 3px 8px 2px rgba(0, 0, 0, 0);
     &:hover {
       -webkit-box-shadow: 0px 0px 20px 12px rgba(255, 255, 255, 0.89);
       -moz-box-shadow: 0px 0px 20px 12px rgba(255, 255, 255, 0.89);
       box-shadow: 0px 0px 20px 12px rgba(255, 255, 255, 0.89);
-      border: solid 2.5px $secondary-color;
+      // border: solid 2.5px $secondary-color;
       @include easeOut;
       opacity: 0.6;
     }
