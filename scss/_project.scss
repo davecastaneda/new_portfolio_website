@@ -1,0 +1,49 @@
+// Projects Page
+.projects {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    // -moz-box-shadow: rgb(0, 0, 0) 0px 10px 13px -7px,
+    //   6px 3px 8px 2px rgba(0, 0, 0, 0);
+    // -webkit-box-shadow: rgb(0, 0, 0) 0px 10px 13px -7px,
+    //   6px 3px 8px 2px rgba(0, 0, 0, 0);
+    // box-shadow: rgb(0, 0, 0) 0px 10px 13px -7px,
+    //   6px 3px 8px 2px rgba(0, 0, 0, 0);
+
+    &:hover {
+      -webkit-box-shadow: 0px 0px 15px 9px $secondary-color;
+      -moz-box-shadow: 0px 0px 15px 9px $secondary-color;
+      box-shadow: 0px 0px 15px 9px $secondary-color;
+      @include easeOut;
+      opacity: 0.48;
+    }
+  }
+}
+
+// Button Styles
+.btn {
+  display: block;
+  text-align: center;
+  padding: 0.7rem 0.7rem;
+  border: 0;
+  margin-top: 0.47rem;
+  margin-bottom: 0.6rem;
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+    // box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    //   0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 40);
+  color: #fff;
+  @include easeOut;
+  border-radius: 50px;
+  border: 1.4px #fff solid;
+}

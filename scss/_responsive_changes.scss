@@ -1,18 +1,18 @@
-// For Wide Screens
+// Wide Screens
 @include mediaXl {
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-// For Desktops & Laptops
+// Desktops & Laptops
 @include mediaLg {
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-// For Tablets & Small Laptops
+// Tablets & Small Laptops
 @include mediaMd {
   main {
     align-items: center;
@@ -79,7 +79,7 @@
   }
 }
 
-// For Smartphones
+// Smartphones
 @include mediaSm {
   main {
     padding: 2rem;

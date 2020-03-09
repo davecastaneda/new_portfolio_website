@@ -1,5 +1,9 @@
 @import "config";
 @import "menu";
+@import "about";
+@import "contact";
+@import "index";
+@import "project";
 
 * {
   box-sizing: border-box;
@@ -29,7 +33,8 @@ h5 {
 
   &.lg-heading {
     font-size: 5rem;
-    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.6);
+    // margin-top: 0.5rem;
+    // text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.6);
     // text-shadow: 4px 3px 0 #403c3a;
     // text-shadow: 33px 22px 2px 2px #191919;
   }
@@ -38,9 +43,9 @@ h5 {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 11), 0.7);
-    -webkit-box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.49);
-    -moz-box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.49);
-    box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.49);
+    // -webkit-box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.49);
+    // -moz-box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.49);
+    // box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.49);
   }
 }
 
@@ -59,183 +64,12 @@ header {
   color: $secondary-color;
 }
 
-main {
-  padding: 4rem;
-  // height: 100%;
-  min-height: calc(100vh - 60px);
-
-  .icons {
-    margin-top: 1rem;
-
-    a {
-      padding: 0.4rem;
-      @include easeOut();
-
-      &:hover {
-        color: $secondary-color;
-      }
-    }
-  }
-
-  &#home {
-    overflow: hidden;
-    h1 {
-      margin-top: 20vh;
-    }
-  }
-}
-
-.about-info {
-  display: grid;
-  gap: 30px;
-  grid-template-areas:
-    "bioimage bio bio"
-    "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr);
-
-  .bio-image {
-    grid-area: bioimage;
-    background: $portrait-full;
-    width: 196px;
-    height: 244px;
-    margin: auto;
-    border-radius: 50%;
-    border: solid 3px $secondary-color;
-  }
-
-  .bio {
-    grid-area: bio;
-    font-size: 1.2rem;
-  }
-
-  h2 {
-    font-weight: 500;
-    margin-bottom: 0.3rem;
-    color: $secondary-color;
-    // color: #bae0f5;
-  }
-
-  h4 {
-    font-size: 1.12rem;
-    font-weight: 350;
-    margin-bottom: 0.6rem;
-    font-style: italic;
-  }
-
-  .job-1 {
-    grid-area: job1;
-  }
-
-  .job-2 {
-    grid-area: job2;
-  }
-
-  .job-3 {
-    grid-area: job3;
-  }
-
-  .job {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-      0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background: lighten($primary-color, 7);
-    padding: 0.5rem;
-    border-bottom: $secondary-color 4px solid;
-    // border-bottom: #069cf0 4px solid;
-  }
-}
-
-// Projects Page
-.projects {
-  display: grid;
-  gap: 1rem;
-
-  grid-template-columns: repeat(3, 1fr);
-
-  img {
-    width: 100%;
-    // border: 2.5px rgba(0, 0, 0, 0.63) solid;
-    // -webkit-box-shadow: 12px 11px 4px -3px rgba(0, 0, 0, 0.63);
-    // -moz-box-shadow: 12px 11px 4px -3px rgba(0, 0, 0, 0.63);
-    // box-shadow: 12px 11px 4px -3px rgba(0, 0, 0, 0.63);
-
-    -moz-box-shadow: rgb(0, 0, 0) 0px 10px 13px -7px,
-      6px 3px 8px 2px rgba(0, 0, 0, 0);
-    -webkit-box-shadow: rgb(0, 0, 0) 0px 10px 13px -7px,
-      6px 3px 8px 2px rgba(0, 0, 0, 0);
-    box-shadow: rgb(0, 0, 0) 0px 10px 13px -7px,
-      6px 3px 8px 2px rgba(0, 0, 0, 0);
-    &:hover {
-      -webkit-box-shadow: 0px 0px 20px 12px rgba(255, 255, 255, 0.89);
-      -moz-box-shadow: 0px 0px 20px 12px rgba(255, 255, 255, 0.89);
-      box-shadow: 0px 0px 20px 12px rgba(255, 255, 255, 0.89);
-      // border: solid 2.5px $secondary-color;
-      @include easeOut;
-      opacity: 0.6;
-    }
-  }
-}
-
-// Contact Page
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem;
-
-  div {
-    font-size: 1.7rem;
-    border: 2px #fff solid;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
-    @include easeOut;
-
-    &:hover {
-      padding: 0.5rem 1.5rem;
-      background: $secondary-color;
-      color: set-text-color($secondary-color);
-
-      span {
-        color: set-text-color($secondary-color);
-      }
-    }
-  }
-}
-
-// Button Styles
-.btn {
-  display: block;
-  text-align: center;
-  padding: 0.7rem 0.7rem;
-  border: 0;
-  margin-top: 0.2rem;
-  margin-bottom: 0.6rem;
-  &:hover {
-    // background: $tertiary-color;
-    background: $secondary-color;
-    // color: set-text-color($tertiary-color);
-    color: set-text-color($secondary-color);
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-      0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  }
-}
-
-.btn-dark {
-  @extend .btn;
-  background: darken($primary-color, 40);
-  color: #fff;
-  @include easeOut;
-  border-radius: 50px;
-  border: 1.4px #fff solid;
-}
-
 #main-footer {
   text-align: center;
   padding: 1rem;
   background: darken($primary-color, 10);
-  // color: set-text-color($primary-color);
   color: set-text-color(#000);
   height: 60px;
 }
 
-@import "mobile";
+@import "responsive_changes";
