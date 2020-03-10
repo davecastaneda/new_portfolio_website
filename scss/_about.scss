@@ -13,22 +13,12 @@
     height: 244px;
     margin: auto;
     border-radius: 50%;
-    border: solid 3px $secondary-color;
+    border: solid 2.5px $secondary-color;
   }
 
   .bio {
     grid-area: bio;
     font-size: 1.2rem;
-  }
-
-  h2 {
-    margin-bottom: 0.3rem;
-    color: $secondary-color;
-  }
-
-  h4 {
-    margin-bottom: 0.6rem;
-    font-style: italic;
   }
 
   .job-1 {
@@ -44,10 +34,23 @@
   }
 
   .job {
-    // box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-    //   0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background: lighten($primary-color, 12);
     padding: 0.5rem;
-    border-bottom: $secondary-color 4px solid;
+    border-bottom: $secondary-color 3px solid;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.8);
+
+    h2 {
+      margin-bottom: 0.3rem;
+      color: $secondary-color;
+      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.37);
+    }
+
+    h4 {
+      margin-bottom: 0.6rem;
+      font-style: italic;
+      text-shadow: 0px 1.5px 2.3px rgba(0, 0, 0, 0.3);
+    }
   }
 }

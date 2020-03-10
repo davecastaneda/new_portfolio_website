@@ -102,16 +102,10 @@
     height: 244px;
     margin: auto;
     border-radius: 50%;
-    border: solid 3px #06f0ce; }
+    border: solid 2.5px #06f0ce; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.2rem; }
-  .about-info h2 {
-    margin-bottom: 0.3rem;
-    color: #06f0ce; }
-  .about-info h4 {
-    margin-bottom: 0.6rem;
-    font-style: italic; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -121,24 +115,46 @@
   .about-info .job {
     background: #575d60;
     padding: 0.5rem;
-    border-bottom: #06f0ce 4px solid; }
+    border-bottom: #06f0ce 3px solid;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.8); }
+    .about-info .job h2 {
+      margin-bottom: 0.3rem;
+      color: #06f0ce;
+      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.37); }
+    .about-info .job h4 {
+      margin-bottom: 0.6rem;
+      font-style: italic;
+      text-shadow: 0px 1.5px 2.3px rgba(0, 0, 0, 0.3); }
 
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center; }
-  .boxes div {
+.contact-info {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 15px;
+  margin-top: 4rem; }
+  .contact-info #box-1 {
+    grid-area: 1 / 1 / span 1 / span 2; }
+  .contact-info #box-2 {
+    grid-area: 3 / 3 / span 1 / span 2; }
+  .contact-info #box-3 {
+    grid-area: 5 / 5 / span 1 / span 2; }
+  .contact-info div {
     font-size: 1.7rem;
     border: 2px #fff solid;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
-    transition: all 0.3s ease-out; }
-    .boxes div:hover {
-      padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease-out;
+    -webkit-box-shadow: 0px 1.5px 2.5px 0px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 0px 1.5px 2.5px 0px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 1.5px 2.5px 0px rgba(0, 0, 0, 0.9); }
+    .contact-info div:hover {
+      padding: 2rem 2rem;
       background: #06f0ce;
       color: #000; }
-      .boxes div:hover span {
+      .contact-info div:hover span {
         color: #000; }
 
 main {
@@ -162,13 +178,16 @@ main {
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
-    width: 100%; }
+    width: 100%;
+    -webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.3); }
     .projects img:hover {
-      -webkit-box-shadow: 0px 0px 15px 9px #06f0ce;
-      -moz-box-shadow: 0px 0px 15px 9px #06f0ce;
-      box-shadow: 0px 0px 15px 9px #06f0ce;
+      -webkit-box-shadow: 0px 0px 9px 7px #06f0ce;
+      -moz-box-shadow: 0px 0px 9px 7px #06f0ce;
+      box-shadow: 0px 0px 9px 7px #06f0ce;
       transition: all 0.3s ease-out;
-      opacity: 0.48; }
+      opacity: 0.6; }
 
 .btn, .btn-dark {
   display: block;
@@ -176,7 +195,10 @@ main {
   padding: 0.7rem 0.7rem;
   border: 0;
   margin-top: 0.47rem;
-  margin-bottom: 0.6rem; }
+  margin-bottom: 0.6rem;
+  -webkit-box-shadow: 0px 1.5px 4.5px 0.8px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 1.5px 4.5px 0.8px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 1.5px 4.5px 0.8px rgba(0, 0, 0, 0.7); }
   .btn:hover, .btn-dark:hover {
     background: #06f0ce;
     color: #000; }
@@ -224,7 +246,8 @@ h5 {
   h3.lg-heading,
   h4.lg-heading,
   h5.lg-heading {
-    font-size: 5rem; }
+    font-size: 5rem;
+    text-shadow: 0px 1px 3.5px rgba(0, 0, 0, 0.55); }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading,
@@ -232,7 +255,10 @@ h5 {
   h5.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(85, 91, 93, 0.7); }
+    background: rgba(85, 91, 93, 0.7);
+    -webkit-box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.45); }
 
 a {
   color: #fff;

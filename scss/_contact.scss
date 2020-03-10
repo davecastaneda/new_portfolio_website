@@ -1,22 +1,39 @@
 // Contact Page
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  // margin-top: 4rem;
+.contact-info {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 15px;
+  margin-top: 4rem;
+
+  #box-1 {
+    grid-area: 1 / 1 / span 1 / span 2;
+  }
+
+  #box-2 {
+    grid-area: 3 / 3 / span 1 / span 2;
+  }
+
+  #box-3 {
+    grid-area: 5 / 5 / span 1 / span 2;
+  }
 
   div {
     font-size: 1.7rem;
     border: 2px #fff solid;
+    border-radius: 10px;
+    text-align: center;
 
     // TODO: Update for mobile, etc.
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
+    padding: 1rem 0.5rem;
+    margin-bottom: 2rem;
     @include easeOut;
 
+    -webkit-box-shadow: 0px 1.5px 2.5px 0px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 0px 1.5px 2.5px 0px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 1.5px 2.5px 0px rgba(0, 0, 0, 0.9);
+
     &:hover {
-      padding: 0.5rem 1.5rem;
+      padding: 2rem 2rem;
       background: $secondary-color;
       color: set-text-color($secondary-color);
 
