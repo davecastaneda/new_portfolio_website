@@ -1,14 +1,41 @@
 // Wide Screens
-@include mediaXl {
-  .projects {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
+// @include mediaXl {
+// }
 
 // Desktops & Laptops
 @include mediaLg {
+  main {
+    .lg-heading {
+      font-size: 4.5rem;
+    }
+
+    .sm-heading {
+      margin-bottom: 1.6rem;
+      padding: 0.15rem 0.8rem;
+    }
+  }
+  .about-info {
+    .bio {
+      font-size: 1rem;
+    }
+
+    .job {
+      font-size: 0.85rem;
+    }
+  }
+
   .projects {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-info {
+    div {
+      font-size: 1.15rem;
+
+      &:hover {
+        padding: 1.5rem 1.5rem;
+      }
+    }
   }
 }
 
@@ -19,8 +46,13 @@
     text-align: center;
 
     .lg-heading {
-      line-height: 0.9;
-      margin-bottom: 1.23rem;
+      font-size: 4.1rem;
+    }
+
+    .sm-heading {
+      font-size: 1.22rem;
+      margin-bottom: 1rem;
+      padding: 0.2rem 0rem;
     }
   }
 

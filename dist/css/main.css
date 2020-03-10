@@ -92,7 +92,7 @@
 
 .about-info {
   display: grid;
-  gap: 30px;
+  gap: 2rem;
   grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
@@ -116,23 +116,22 @@
     background: #575d60;
     padding: 0.5rem;
     border-bottom: #06f0ce 3px solid;
-    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.8);
-    -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.8);
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.8); }
+    -webkit-box-shadow: 0px 2px 3px 0.2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 2px 3px 0.2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 3px 0.2px rgba(0, 0, 0, 0.3); }
     .about-info .job h2 {
       margin-bottom: 0.3rem;
       color: #06f0ce;
-      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.37); }
+      text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4); }
     .about-info .job h4 {
       margin-bottom: 0.6rem;
       font-style: italic;
-      text-shadow: 0px 1.5px 2.3px rgba(0, 0, 0, 0.3); }
+      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4); }
 
 .contact-info {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  grid-gap: 15px;
-  margin-top: 4rem; }
+  grid-gap: 2rem;
+  grid-template-columns: auto auto auto auto auto auto; }
   .contact-info #box-1 {
     grid-area: 1 / 1 / span 1 / span 2; }
   .contact-info #box-2 {
@@ -146,10 +145,10 @@
     text-align: center;
     padding: 1rem 0.5rem;
     margin-bottom: 2rem;
-    transition: all 0.3s ease-out;
-    -webkit-box-shadow: 0px 1.5px 2.5px 0px rgba(0, 0, 0, 0.9);
-    -moz-box-shadow: 0px 1.5px 2.5px 0px rgba(0, 0, 0, 0.9);
-    box-shadow: 0px 1.5px 2.5px 0px rgba(0, 0, 0, 0.9); }
+    -webkit-box-shadow: 0px 2px 4px 0.3px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 2px 4px 0.3px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 2px 4px 0.3px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease-out; }
     .contact-info div:hover {
       padding: 2rem 2rem;
       background: #06f0ce;
@@ -175,30 +174,30 @@ main {
 
 .projects {
   display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(3, 1fr); }
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr); }
   .projects img {
     width: 100%;
-    -webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.3); }
+    -webkit-box-shadow: 0px 3px 7px 3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 3px 7px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 3px 7px 3px rgba(0, 0, 0, 0.4); }
     .projects img:hover {
       -webkit-box-shadow: 0px 0px 9px 7px #06f0ce;
       -moz-box-shadow: 0px 0px 9px 7px #06f0ce;
       box-shadow: 0px 0px 9px 7px #06f0ce;
-      transition: all 0.3s ease-out;
-      opacity: 0.6; }
+      opacity: 0.6;
+      transition: all 0.3s ease-out; }
 
 .btn, .btn-dark {
   display: block;
   text-align: center;
   padding: 0.7rem 0.7rem;
   border: 0;
-  margin-top: 0.47rem;
+  margin-top: 0.5rem;
   margin-bottom: 0.6rem;
-  -webkit-box-shadow: 0px 1.5px 4.5px 0.8px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0px 1.5px 4.5px 0.8px rgba(0, 0, 0, 0.7);
-  box-shadow: 0px 1.5px 4.5px 0.8px rgba(0, 0, 0, 0.7); }
+  -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.8); }
   .btn:hover, .btn-dark:hover {
     background: #06f0ce;
     color: #000; }
@@ -206,9 +205,9 @@ main {
 .btn-dark {
   background: black;
   color: #fff;
-  transition: all 0.3s ease-out;
   border-radius: 50px;
-  border: 1.4px #fff solid; }
+  border: 1.4px #fff solid;
+  transition: all 0.3s ease-out; }
 
 * {
   box-sizing: border-box; }
@@ -247,7 +246,7 @@ h5 {
   h4.lg-heading,
   h5.lg-heading {
     font-size: 5rem;
-    text-shadow: 0px 1px 3.5px rgba(0, 0, 0, 0.55); }
+    text-shadow: 0px 3.5px 6.5px 1px rgba(0, 0, 0, 0.3); }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading,
@@ -256,9 +255,9 @@ h5 {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(85, 91, 93, 0.7);
-    -webkit-box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.45);
-    -moz-box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.45);
-    box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.45); }
+    -webkit-box-shadow: 0px 2.5px 4px 0.5px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 2.5px 4px 0.5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 2.5px 14px 0.5px rgba(0, 0, 0, 0.4); }
 
 a {
   color: #fff;
@@ -279,21 +278,33 @@ header {
   color: #fff;
   height: 60px; }
 
-@media screen and (min-width: 1171px) {
-  .projects {
-    grid-template-columns: repeat(4, 1fr); } }
-
 @media screen and (min-width: 769px) and (max-width: 1170px) {
+  main .lg-heading {
+    font-size: 4.5rem; }
+  main .sm-heading {
+    margin-bottom: 1.6rem;
+    padding: 0.15rem 0.8rem; }
+  .about-info .bio {
+    font-size: 1rem; }
+  .about-info .job {
+    font-size: 0.85rem; }
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .contact-info div {
+    font-size: 1.15rem; }
+    .contact-info div:hover {
+      padding: 1.5rem 1.5rem; } }
 
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
     text-align: center; }
     main .lg-heading {
-      line-height: 0.9;
-      margin-bottom: 1.23rem; }
+      font-size: 4.1rem; }
+    main .sm-heading {
+      font-size: 1.22rem;
+      margin-bottom: 1rem;
+      padding: 0.2rem 0rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
