@@ -41,134 +41,6 @@ $portrait-small: url(/dist/img/portrait_small.jpg);
 }
 
 // Media Query Mixins
-// @mixin media {
-//   @media screen and (min-width: 1px) and (max-width: 1px) {
-//     @content;
-//   }
-// }
-
-// @mixin media {
-//   @media screen and (min-width: 1px) and (max-width: 1px) {
-//     @content;
-//   }
-// }
-
-// @mixin media {
-//   @media screen and (min-width: 1px) and (max-width: 1px) {
-//     @content;
-//   }
-// }
-
-// @mixin media {
-//   @media screen and (min-width: 1px) and (max-width: 1px) {
-//     @content;
-//   }
-// }
-
-// @mixin media {
-//   @media screen and (min-width: 1px) and (max-width: 1px) {
-//     @content;
-//   }
-// }
-
-// @mixin media {
-//   @media screen and (min-width: 1px) and (max-width: 1px) {
-//     @content;
-//   }
-// }
-
-// @mixin mediaFourteen {
-//   @media screen and (min-width: 1px) and (max-width: 957px) {
-//     @content;
-//   }
-// }
-
-// @mixin mediaThirteen {
-//   @media screen and (min-width: 958px) and (max-width: 1028px) {
-//     @content;
-//   }
-// }
-
-// @mixin mediaTwelve {
-//   @media screen and (min-width: 1029px) and (max-width: 1044px) {
-//     @content;
-//   }
-// }
-
-// @mixin mediaEleven {
-//   @media screen and (min-width: 1045px) and (max-width: 1065px) {
-//     @content;
-//   }
-// }
-
-// @mixin mediaTen {
-//   @media screen and (min-width: 1066px) and (max-width: 1129px) {
-//     @content;
-//   }
-// }
-
-// @mixin mediaNine {
-//   @media screen and (min-width: 1130px) and (max-width: 1214px) {
-//     @content;
-//   }
-// }
-
-// @mixin mediaEight {
-//   @media screen and (min-width: 1215px) and (max-width: 1229px) {
-//     @content;
-//   }
-// }
-
-// @mixin mediaSeven {
-//   @media screen and (min-width: 1230px) and (max-width: 1263px) {
-//     @content;
-//   }
-// }
-
-// @mixin mediaSix {
-//   @media screen and (min-width: 1264px) and (max-width: 1354px) {
-//     @content;
-//   }
-// }
-
-// @mixin mediafive {
-//   @media screen and (min-width: 1355px) and (max-width: 1484px) {
-//     @content;
-//   }
-// }
-
-@mixin mediafour {
-  @media screen and (min-width: 1px) and (max-width: 834px) {
-    @content;
-  }
-}
-
-@mixin mediaThree {
-  @media screen and (min-width: 835px) and (max-width: 910px) {
-    @content;
-  }
-}
-
-@mixin mediaTwo {
-  @media screen and (min-width: 911px) and (max-width: 949px) {
-    @content;
-  }
-}
-
-@mixin mediaOne {
-  @media screen and (min-width: 950px) and (max-width: 1350px) {
-    @content;
-  }
-}
-
-@mixin mediaMax {
-  @media screen and (min-width: 1351px) {
-    @content;
-  }
-}
-
-// OG Master Portfolio Mixins:
-
 // @mixin mediaSm {
 //   @media screen and (max-width: 500px) {
 //     @content;
@@ -177,6 +49,54 @@ $portrait-small: url(/dist/img/portrait_small.jpg);
 
 // @mixin mediaMd {
 //   @media screen and (max-width: 768px) {
+//     @content;
+//   }
+// }
+
+@mixin mediaSeven {
+  @media screen and (min-width: 1px) and (max-width: 677px) {
+    @content;
+  }
+}
+
+@mixin mediaSix {
+  @media screen and (min-width: 678px) and (max-width: 700px) {
+    @content;
+  }
+}
+
+@mixin mediaFive {
+  @media screen and (min-width: 701px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mediaFour {
+  @media screen and (min-width: 768px) and (max-width: 793px) {
+    @content;
+  }
+}
+
+@mixin mediaThree {
+  @media screen and (min-width: 794px) and (max-width: 955px) {
+    @content;
+  }
+}
+
+@mixin mediaTwo {
+  @media screen and (min-width: 956px) and (max-width: 1196px) {
+    @content;
+  }
+}
+
+@mixin mediaOne {
+  @media screen and (min-width: 1197px) and (max-width: 1401px) {
+    @content;
+  }
+}
+
+// @mixin mediaMax {
+//   @media screen and (min-width: 1431px) {
 //     @content;
 //   }
 // }

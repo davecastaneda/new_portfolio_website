@@ -1,437 +1,177 @@
 @include mediaOne {
   .contact-info {
-    grid-gap: 1.5rem;
-    font-size: 1rem;
+    grid-gap: 1rem;
+    font-size: 1.3rem;
   }
 
   .email-box,
   .linkedin-box,
   .twitter-box {
-    padding: 0.8rem 0rem;
-
     &:hover {
-      padding: 1.8rem 2.2rem;
+      padding: 2rem 3.4rem;
     }
   }
 }
 
 @include mediaTwo {
   .contact-info {
-    grid-gap: 1rem;
+    grid-gap: 0.7rem;
     font-size: 1rem;
   }
 
   .email-box,
   .linkedin-box,
   .twitter-box {
-    border: 1.5px #fff solid;
-    padding: 0.5rem 0rem;
-
     &:hover {
-      padding: 1.5rem 2rem;
+      padding: 1.7rem 3rem;
     }
   }
 }
 
 @include mediaThree {
   .contact-info {
-    grid-gap: 0.7rem;
-    font-size: 0.9rem;
-  }
-
-  .email-box,
-  .linkedin-box,
-  .twitter-box {
-    border: 1.4px #fff solid;
-    padding: 0.5rem 0rem;
-
-    &:hover {
-      padding: 1.35rem 2.2rem;
-    }
-  }
-}
-
-@include mediafour {
-  .contact-info {
-    grid-gap: 2rem;
+    grid-gap: 1.7rem;
     font-size: 1rem;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, auto);
   }
-
   .email-box {
     grid-column: 1 / span 2;
-    grid-row: 1;
   }
 
   .linkedin-box {
     grid-column: 2 / span 2;
-    grid-row: 2;
   }
 
   .twitter-box {
     grid-column: 3 / span 2;
-    grid-row: 3;
   }
 
   .email-box,
   .linkedin-box,
   .twitter-box {
-    border: 1.5px #fff solid;
-    padding: 0.8rem 0rem;
-
     &:hover {
-      padding: 1.35rem 2.2rem;
+      padding: 1.7rem 4.7rem;
     }
   }
 }
 
-// @include mediafive {
-//   .contact-info {
-//     grid-gap: 1.5rem;
-//     font-size: 1.2rem;
-
-//     #box-1 {
-//       padding: 0.9rem 0rem;
-
-//       &:hover {
-//         padding: 1.6rem 5.5rem;
-//       }
-//     }
-
-//     #box-2 {
-//       padding: 0.9rem 1.7rem;
-
-//       &:hover {
-//         padding: 1.6rem 5rem;
-//       }
-//     }
-
-//     #box-3 {
-//       padding: 0.9rem 0rem;
-
-//       &:hover {
-//         padding: 1.6rem 8.4rem;
-//       }
-//     }
-//   }
-// }
-
-// @include mediaSix {
-//   .contact-info {
-//     grid-gap: 1.1rem;
-//     font-size: 1.1rem;
-
-//     #box-1 {
-//       padding: 0.9rem 0rem;
-
-//       &:hover {
-//         padding: 1.4rem 5.5rem;
-//       }
-//     }
-
-//     #box-2 {
-//       padding: 0.9rem 1.5rem;
-
-//       &:hover {
-//         padding: 1.4rem 4.9rem;
-//       }
-//     }
-
-//     #box-3 {
-//       padding: 0.9rem 0rem;
-
-//       &:hover {
-//         padding: 1.4rem 8.3rem;
-//       }
-//     }
-//   }
-// }
-
-// @include mediaSeven {
-//   .contact-info {
-//     grid-gap: 1.1rem;
-//     font-size: 1.1rem;
-
-//     #box-1 {
-//       padding: 0.8rem 0rem;
-
-//       &:hover {
-//         padding: 1.4rem 4.4rem;
-//       }
-//     }
-
-//     #box-2 {
-//       padding: 0.8rem 1.9rem;
-
-//       &:hover {
-//         padding: 1.4rem 4.6rem;
-//       }
-//     }
-
-//     #box-3 {
-//       padding: 0.8rem 0rem;
-
-//       &:hover {
-//         padding: 1.4rem 6.7rem;
-//       }
-//     }
-//   }
-// }
-
-// @include mediaEight {
-//   .contact-info {
-//     grid-gap: 1.3rem;
-//     font-size: 1.1rem;
-
-//     #box-1 {
-//       padding: 0.8rem 0rem;
-
-//       &:hover {
-//         padding: 1.4rem 3.9rem;
-//       }
-//     }
-
-//     #box-2 {
-//       padding: 0.8rem 1.7rem;
-
-//       &:hover {
-//         padding: 1.4rem 4.1rem;
-//       }
-//     }
-
-//     #box-3 {
-//       padding: 0.8rem 0rem;
-
-//       &:hover {
-//         padding: 1.4rem 6.1rem;
-//       }
-//     }
-//   }
-// }
-
-// @include mediaNine {
-//   .contact-info {
-//     grid-gap: 1rem;
-//     font-size: 1rem;
-
-//     #box-1 {
-//       padding: 0.8rem 0rem;
-
-//       &:hover {
-//         padding: 1.5rem 3.5rem;
-//       }
-//     }
-
-//     #box-2 {
-//       padding: 0.8rem 1rem;
-
-//       &:hover {
-//         padding: 1.5rem 4rem;
-//       }
-//     }
-
-//     #box-3 {
-//       padding: 0.8rem 0rem;
-
-//       &:hover {
-//         padding: 1.5rem 6.6rem;
-//       }
-//     }
-//   }
-// }
-
-// @include mediaTen {
-//   .contact-info {
-//     grid-gap: 1rem;
-//     font-size: 1rem;
-
-//     #box-1 {
-//       padding: 0.8rem 0rem;
-
-//       &:hover {
-//         padding: 1.4rem 3.4rem;
-//       }
-//     }
-
-//     #box-2 {
-//       padding: 0.8rem 0rem;
-
-//       &:hover {
-//         padding: 1.4rem 3.4rem;
-//       }
-//     }
-
-//     #box-3 {
-//       padding: 0.8rem 0rem;
-
-//       &:hover {
-//         padding: 1.4rem 6.1rem;
-//       }
-//     }
-//   }
-// }
-
-// @include mediaEleven {
-//   .contact-info {
-//     grid-gap: 1rem;
-//     font-size: 1rem;
-
-//     #box-1 {
-//       padding: 0.6rem 0rem;
-
-//       &:hover {
-//         padding: 1.3rem 3rem;
-//       }
-//     }
-
-//     #box-2 {
-//       padding: 0.6rem 0.7rem;
-
-//       &:hover {
-//         padding: 1.3rem 3rem;
-//       }
-//     }
-
-//     #box-3 {
-//       padding: 0.6rem 0rem;
-
-//       &:hover {
-//         padding: 1.3rem 4.5rem;
-//       }
-//     }
-//   }
-// }
-
-// @include mediaTwelve {
-//   .contact-info {
-//     grid-gap: 0.8rem;
-//     font-size: 1rem;
-//     grid-template-columns: repeat(3, 1fr);
-
-//     #box-1 {
-//       padding: 0.7rem 0rem;
-
-//       &:hover {
-//         padding: 1.4rem 2.3rem;
-//       }
-//     }
-
-//     #box-2 {
-//       padding: 0.7rem 0.5rem;
-
-//       &:hover {
-//         padding: 1.4rem 2.4rem;
-//       }
-//     }
-
-//     #box-3 {
-//       padding: 0.7rem 0rem;
-
-//       &:hover {
-//         padding: 1.4rem 4.3rem;
-//       }
-//     }
-//   }
-// }
-
-// @include mediaThirteen {
-//   .contact-info {
-//     grid-gap: 1.2rem;
-//     font-size: 0.9rem;
-
-//     #box-1 {
-//       padding: 0.8rem 0rem;
-
-//       &:hover {
-//         padding: 1.7rem 3rem;
-//       }
-//     }
-
-//     #box-2 {
-//       padding: 0.8rem 0rem;
-
-//       &:hover {
-//         padding: 1.7rem 2.5rem;
-//       }
-//     }
-
-//     #box-3 {
-//       padding: 0.8rem 0rem;
-
-//       &:hover {
-//         padding: 1.7rem 5rem;
-//       }
-//     }
-//   }
-// }
-
-// @include mediaFourteen {
-//   .contact-info {
-//     grid-gap: 0.5rem;
-//     font-size: 0.9rem;
-
-//     #box-1 {
-//       padding: 0.8rem 0rem;
-
-//       &:hover {
-//         padding: 1.5rem 2.7rem;
-//       }
-//     }
-
-//     #box-2 {
-//       padding: 0.8rem 0.5rem;
-
-//       &:hover {
-//         padding: 1.5rem 2.5rem;
-//       }
-//     }
-
-//     #box-3 {
-//       padding: 0.8rem 0rem;
-
-//       &:hover {
-//         padding: 1.5rem 4.5rem;
-//       }
-//     }
-//   }
-// }
-
-// @include media {
-//   .contact-info {
-//     grid-gap: 0rem;
-//   }
-// }
-
-// @include media {
-//   .contact-info {
-//     grid-gap: 0rem;
-//   }
-// }
-
-// @include media {
-//   .contact-info {
-//     grid-gap: 0rem;
-//   }
-// }
-
-// @include media {
-//   .contact-info {
-//     grid-gap: 0rem;
-//   }
-// }
-
-// @include media {
-//   .contact-info {
-//     grid-gap: 0rem;
-//   }
-// }
-
-// @include media {
-//   .contact-info {
-//     grid-gap: 0rem;
-//   }
-// }
-
+@include mediaFour {
+  .contact-info {
+    grid-gap: 1.5rem;
+    font-size: 1rem;
+    grid-template-columns: repeat(4, auto);
+  }
+  .email-box {
+    grid-column: 1 / span 2;
+  }
+
+  .linkedin-box {
+    grid-column: 2 / span 2;
+  }
+
+  .twitter-box {
+    grid-column: 3 / span 2;
+  }
+
+  .email-box,
+  .linkedin-box,
+  .twitter-box {
+    &:hover {
+      padding: 1.5rem 4.3rem;
+    }
+  }
+}
+
+@include mediaFive {
+  .contact-info {
+    grid-gap: 1.8rem;
+    font-size: 1rem;
+    grid-template-columns: repeat(7, auto);
+  }
+  .email-box {
+    grid-column: 1 / span 5;
+  }
+
+  .linkedin-box {
+    grid-column: 2 / span 5;
+  }
+
+  .twitter-box {
+    grid-column: 3 / span 5;
+  }
+
+  .email-box,
+  .linkedin-box,
+  .twitter-box {
+    &:hover {
+      padding: 2rem 7rem;
+    }
+  }
+}
+
+@include mediaSix {
+  .contact-info {
+    grid-gap: 1rem;
+    font-size: 1rem;
+    grid-template-columns: repeat(7, auto);
+  }
+  .email-box {
+    grid-column: 1 / span 5;
+    &:hover {
+      padding: 1.75rem 6.5rem;
+    }
+  }
+
+  .linkedin-box {
+    grid-column: 2 / span 5;
+    &:hover {
+      padding: 1.75rem 6rem;
+    }
+  }
+
+  .twitter-box {
+    grid-column: 3 / span 5;
+    &:hover {
+      padding: 1.75rem 8rem;
+    }
+  }
+}
+
+@include mediaSeven {
+  .contact-info {
+    grid-gap: 1.5rem;
+    font-size: 1rem;
+    grid-template-columns: repeat(10, auto);
+  }
+  .email-box {
+    grid-column: 1 / span 8;
+    &:hover {
+      padding: 1.75rem 7rem;
+    }
+  }
+
+  .linkedin-box {
+    grid-column: 2 / span 8;
+    &:hover {
+      padding: 1.75rem 6.5rem;
+    }
+  }
+
+  .twitter-box {
+    grid-column: 3 / span 8;
+    &:hover {
+      padding: 1.75rem 8.5rem;
+    }
+  }
+
+  // .email-box,
+  // .linkedin-box,
+  // .twitter-box {
+  //   &:hover {
+  //     padding: 1.8rem 7.5rem;
+  //   }
+  // }
+}
 // @include mediaLg {
 //   main {
 //     .lg-heading {
@@ -456,16 +196,6 @@
 //   .projects {
 //     grid-template-columns: repeat(3, 1fr);
 //   }
-
-// .contact-info {
-//   div {
-//     font-size: 1.15rem;
-
-//     &:hover {
-//       padding: 1.5rem 1.5rem;
-//     }
-//   }
-// }
 // }
 
 // @include mediaMd {
@@ -484,78 +214,78 @@
 //     }
 //   }
 
-// nav.menu {
-//   height: 100%;
-//   width: 100%;
-
-//   ul.menu-nav,
-//   div.menu-branding {
-//     float: none;
+//   nav.menu {
+//     height: 100%;
 //     width: 100%;
-//     min-height: 0;
 
-//     &.show {
-//       transform: translate3d(0, 0, 0);
+//     ul.menu-nav,
+//     div.menu-branding {
+//       float: none;
+//       width: 100%;
+//       min-height: 0;
+
+//       &.show {
+//         transform: translate3d(0, 0, 0);
+//       }
+//     }
+
+//     .menu-nav {
+//       height: 75%;
+//       transform: translate3d(-100%, 0, 0);
+//     }
+
+//     .nav-item {
+//       display: block;
+//       position: inherit;
+//       margin-top: 5%;
+//       top: -22%;
+//       margin-bottom: 10%;
+//     }
+
+//     .menu-branding {
+//       height: 25%;
+//       transform: translate3d(100%, 0, 0);
+
+//       .portrait {
+//         background: $portrait-small;
+//         width: 156px;
+//         height: 156px;
+//       }
 //     }
 //   }
 
-//   .menu-nav {
-//     height: 75%;
-//     transform: translate3d(-100%, 0, 0);
-//   }
+//   .about-info {
+//     grid-template-areas:
+//       "bioimage"
+//       "bio"
+//       "job1"
+//       "job2"
+//       "job3";
 
-// .nav-item {
-// display: block;
-// position: inherit;
-// margin-top: 5%;
-// top: -22%;
-// margin-bottom: 10%;
-// }
+//     grid-template-columns: 1fr;
 
-//   .menu-branding {
-//     height: 25%;
-//     transform: translate3d(100%, 0, 0);
-
-//     .portrait {
+//     .bio-image {
 //       background: $portrait-small;
 //       width: 156px;
-//       height: 156px;
+//       height: 195px;
+//     }
+
+//     .bio {
+//       font-size: 1rem;
 //     }
 //   }
-// }
 
-// .about-info {
-//   grid-template-areas:
-//     "bioimage"
-//     "bio"
-//     "job1"
-//     "job2"
-//     "job3";
-
-//   grid-template-columns: 1fr;
-
-//   .bio-image {
-//     background: $portrait-small;
-//     width: 156px;
-//     height: 195px;
+//   .projects {
+//     grid-template-columns: repeat(2, 1fr);
 //   }
-
-//   .bio {
-//     font-size: 1rem;
-//   }
-// }
-
-// .projects {
-//   grid-template-columns: repeat(2, 1fr);
-// }
 
 // .contact-info {
-// grid-template-areas:
-//   "box-1"
-//   "box-2"
-//   "box-3";
+//   grid-template-areas:
+//     "box-1"
+//     "box-2"
+//     "box-3";
 
-// grid-template-columns: 1fr;
+//   grid-template-columns: 1fr;
 // }
 // }
 
