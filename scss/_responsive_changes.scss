@@ -1,130 +1,577 @@
-// Wide Screens
-// @include mediaXl {
+@include mediaOne {
+  .contact-info {
+    grid-gap: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .email-box,
+  .linkedin-box,
+  .twitter-box {
+    padding: 0.8rem 0rem;
+
+    &:hover {
+      padding: 1.8rem 2.2rem;
+    }
+  }
+}
+
+@include mediaTwo {
+  .contact-info {
+    grid-gap: 1rem;
+    font-size: 1rem;
+  }
+
+  .email-box,
+  .linkedin-box,
+  .twitter-box {
+    border: 1.5px #fff solid;
+    padding: 0.5rem 0rem;
+
+    &:hover {
+      padding: 1.5rem 2rem;
+    }
+  }
+}
+
+@include mediaThree {
+  .contact-info {
+    grid-gap: 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .email-box,
+  .linkedin-box,
+  .twitter-box {
+    border: 1.4px #fff solid;
+    padding: 0.5rem 0rem;
+
+    &:hover {
+      padding: 1.35rem 2.2rem;
+    }
+  }
+}
+
+@include mediafour {
+  .contact-info {
+    grid-gap: 2rem;
+    font-size: 1rem;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .email-box {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  .linkedin-box {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+  }
+
+  .twitter-box {
+    grid-column: 3 / span 2;
+    grid-row: 3;
+  }
+
+  .email-box,
+  .linkedin-box,
+  .twitter-box {
+    border: 1.5px #fff solid;
+    padding: 0.8rem 0rem;
+
+    &:hover {
+      padding: 1.35rem 2.2rem;
+    }
+  }
+}
+
+// @include mediafive {
+//   .contact-info {
+//     grid-gap: 1.5rem;
+//     font-size: 1.2rem;
+
+//     #box-1 {
+//       padding: 0.9rem 0rem;
+
+//       &:hover {
+//         padding: 1.6rem 5.5rem;
+//       }
+//     }
+
+//     #box-2 {
+//       padding: 0.9rem 1.7rem;
+
+//       &:hover {
+//         padding: 1.6rem 5rem;
+//       }
+//     }
+
+//     #box-3 {
+//       padding: 0.9rem 0rem;
+
+//       &:hover {
+//         padding: 1.6rem 8.4rem;
+//       }
+//     }
+//   }
 // }
 
-// Desktops & Laptops
-@include mediaLg {
-  main {
-    .lg-heading {
-      font-size: 4.5rem;
-    }
+// @include mediaSix {
+//   .contact-info {
+//     grid-gap: 1.1rem;
+//     font-size: 1.1rem;
 
-    .sm-heading {
-      margin-bottom: 1.6rem;
-      padding: 0.15rem 0.8rem;
-    }
-  }
-  .about-info {
-    .bio {
-      font-size: 1rem;
-    }
+//     #box-1 {
+//       padding: 0.9rem 0rem;
 
-    .job {
-      font-size: 0.85rem;
-    }
-  }
+//       &:hover {
+//         padding: 1.4rem 5.5rem;
+//       }
+//     }
 
-  .projects {
-    grid-template-columns: repeat(3, 1fr);
-  }
+//     #box-2 {
+//       padding: 0.9rem 1.5rem;
 
-  .contact-info {
-    div {
-      font-size: 1.15rem;
+//       &:hover {
+//         padding: 1.4rem 4.9rem;
+//       }
+//     }
 
-      &:hover {
-        padding: 1.5rem 1.5rem;
-      }
-    }
-  }
-}
+//     #box-3 {
+//       padding: 0.9rem 0rem;
 
-// Tablets & Small Laptops
-@include mediaMd {
-  main {
-    align-items: center;
-    text-align: center;
+//       &:hover {
+//         padding: 1.4rem 8.3rem;
+//       }
+//     }
+//   }
+// }
 
-    .lg-heading {
-      font-size: 4.1rem;
-    }
+// @include mediaSeven {
+//   .contact-info {
+//     grid-gap: 1.1rem;
+//     font-size: 1.1rem;
 
-    .sm-heading {
-      font-size: 1.22rem;
-      margin-bottom: 1rem;
-      padding: 0.2rem 0rem;
-    }
-  }
+//     #box-1 {
+//       padding: 0.8rem 0rem;
 
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0;
+//       &:hover {
+//         padding: 1.4rem 4.4rem;
+//       }
+//     }
 
-    &.show {
-      transform: translate3d(0, 0, 0);
-    }
-  }
+//     #box-2 {
+//       padding: 0.8rem 1.9rem;
 
-  .menu-nav {
-    height: 77vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 20px;
-  }
+//       &:hover {
+//         padding: 1.4rem 4.6rem;
+//       }
+//     }
 
-  .menu-branding {
-    height: 23vh;
-    transform: translate3d(100%, 0, 0);
+//     #box-3 {
+//       padding: 0.8rem 0rem;
 
-    .portrait {
-      background: $portrait-small;
-      width: 156px;
-      height: 156px;
-    }
-  }
+//       &:hover {
+//         padding: 1.4rem 6.7rem;
+//       }
+//     }
+//   }
+// }
 
-  .about-info {
-    grid-template-areas:
-      "bioimage"
-      "bio"
-      "job1"
-      "job2"
-      "job3";
+// @include mediaEight {
+//   .contact-info {
+//     grid-gap: 1.3rem;
+//     font-size: 1.1rem;
 
-    grid-template-columns: 1fr;
+//     #box-1 {
+//       padding: 0.8rem 0rem;
 
-    .bio-image {
-      background: $portrait-small;
-      width: 156px;
-      height: 195px;
-    }
+//       &:hover {
+//         padding: 1.4rem 3.9rem;
+//       }
+//     }
 
-    .bio {
-      grid-area: bio;
-      font-size: 1.1rem;
-    }
-  }
+//     #box-2 {
+//       padding: 0.8rem 1.7rem;
 
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+//       &:hover {
+//         padding: 1.4rem 4.1rem;
+//       }
+//     }
 
-// Smartphones
-@include mediaSm {
-  main {
-    padding: 2rem;
-    #home h1 {
-      margin-top: 10vh;
-    }
+//     #box-3 {
+//       padding: 0.8rem 0rem;
 
-    .lg-heading {
-      margin-top: 1rem;
-      font-size: 5rem;
-    }
-  }
-  .projects {
-    grid-template-columns: 1fr;
-  }
-}
+//       &:hover {
+//         padding: 1.4rem 6.1rem;
+//       }
+//     }
+//   }
+// }
+
+// @include mediaNine {
+//   .contact-info {
+//     grid-gap: 1rem;
+//     font-size: 1rem;
+
+//     #box-1 {
+//       padding: 0.8rem 0rem;
+
+//       &:hover {
+//         padding: 1.5rem 3.5rem;
+//       }
+//     }
+
+//     #box-2 {
+//       padding: 0.8rem 1rem;
+
+//       &:hover {
+//         padding: 1.5rem 4rem;
+//       }
+//     }
+
+//     #box-3 {
+//       padding: 0.8rem 0rem;
+
+//       &:hover {
+//         padding: 1.5rem 6.6rem;
+//       }
+//     }
+//   }
+// }
+
+// @include mediaTen {
+//   .contact-info {
+//     grid-gap: 1rem;
+//     font-size: 1rem;
+
+//     #box-1 {
+//       padding: 0.8rem 0rem;
+
+//       &:hover {
+//         padding: 1.4rem 3.4rem;
+//       }
+//     }
+
+//     #box-2 {
+//       padding: 0.8rem 0rem;
+
+//       &:hover {
+//         padding: 1.4rem 3.4rem;
+//       }
+//     }
+
+//     #box-3 {
+//       padding: 0.8rem 0rem;
+
+//       &:hover {
+//         padding: 1.4rem 6.1rem;
+//       }
+//     }
+//   }
+// }
+
+// @include mediaEleven {
+//   .contact-info {
+//     grid-gap: 1rem;
+//     font-size: 1rem;
+
+//     #box-1 {
+//       padding: 0.6rem 0rem;
+
+//       &:hover {
+//         padding: 1.3rem 3rem;
+//       }
+//     }
+
+//     #box-2 {
+//       padding: 0.6rem 0.7rem;
+
+//       &:hover {
+//         padding: 1.3rem 3rem;
+//       }
+//     }
+
+//     #box-3 {
+//       padding: 0.6rem 0rem;
+
+//       &:hover {
+//         padding: 1.3rem 4.5rem;
+//       }
+//     }
+//   }
+// }
+
+// @include mediaTwelve {
+//   .contact-info {
+//     grid-gap: 0.8rem;
+//     font-size: 1rem;
+//     grid-template-columns: repeat(3, 1fr);
+
+//     #box-1 {
+//       padding: 0.7rem 0rem;
+
+//       &:hover {
+//         padding: 1.4rem 2.3rem;
+//       }
+//     }
+
+//     #box-2 {
+//       padding: 0.7rem 0.5rem;
+
+//       &:hover {
+//         padding: 1.4rem 2.4rem;
+//       }
+//     }
+
+//     #box-3 {
+//       padding: 0.7rem 0rem;
+
+//       &:hover {
+//         padding: 1.4rem 4.3rem;
+//       }
+//     }
+//   }
+// }
+
+// @include mediaThirteen {
+//   .contact-info {
+//     grid-gap: 1.2rem;
+//     font-size: 0.9rem;
+
+//     #box-1 {
+//       padding: 0.8rem 0rem;
+
+//       &:hover {
+//         padding: 1.7rem 3rem;
+//       }
+//     }
+
+//     #box-2 {
+//       padding: 0.8rem 0rem;
+
+//       &:hover {
+//         padding: 1.7rem 2.5rem;
+//       }
+//     }
+
+//     #box-3 {
+//       padding: 0.8rem 0rem;
+
+//       &:hover {
+//         padding: 1.7rem 5rem;
+//       }
+//     }
+//   }
+// }
+
+// @include mediaFourteen {
+//   .contact-info {
+//     grid-gap: 0.5rem;
+//     font-size: 0.9rem;
+
+//     #box-1 {
+//       padding: 0.8rem 0rem;
+
+//       &:hover {
+//         padding: 1.5rem 2.7rem;
+//       }
+//     }
+
+//     #box-2 {
+//       padding: 0.8rem 0.5rem;
+
+//       &:hover {
+//         padding: 1.5rem 2.5rem;
+//       }
+//     }
+
+//     #box-3 {
+//       padding: 0.8rem 0rem;
+
+//       &:hover {
+//         padding: 1.5rem 4.5rem;
+//       }
+//     }
+//   }
+// }
+
+// @include media {
+//   .contact-info {
+//     grid-gap: 0rem;
+//   }
+// }
+
+// @include media {
+//   .contact-info {
+//     grid-gap: 0rem;
+//   }
+// }
+
+// @include media {
+//   .contact-info {
+//     grid-gap: 0rem;
+//   }
+// }
+
+// @include media {
+//   .contact-info {
+//     grid-gap: 0rem;
+//   }
+// }
+
+// @include media {
+//   .contact-info {
+//     grid-gap: 0rem;
+//   }
+// }
+
+// @include media {
+//   .contact-info {
+//     grid-gap: 0rem;
+//   }
+// }
+
+// @include mediaLg {
+//   main {
+//     .lg-heading {
+//       font-size: 4.5rem;
+//     }
+
+//     .sm-heading {
+//       margin-bottom: 1.6rem;
+//       padding: 0.15rem 0.8rem;
+//     }
+//   }
+//   .about-info {
+//     .bio {
+//       font-size: 1rem;
+//     }
+
+//     .job {
+//       font-size: 0.85rem;
+//     }
+//   }
+
+//   .projects {
+//     grid-template-columns: repeat(3, 1fr);
+//   }
+
+// .contact-info {
+//   div {
+//     font-size: 1.15rem;
+
+//     &:hover {
+//       padding: 1.5rem 1.5rem;
+//     }
+//   }
+// }
+// }
+
+// @include mediaMd {
+//   main {
+//     align-items: center;
+//     text-align: center;
+
+//     .lg-heading {
+//       font-size: 4.1rem;
+//     }
+
+//     .sm-heading {
+//       font-size: 1.22rem;
+//       margin-bottom: 1rem;
+//       padding: 0.2rem 0rem;
+//     }
+//   }
+
+// nav.menu {
+//   height: 100%;
+//   width: 100%;
+
+//   ul.menu-nav,
+//   div.menu-branding {
+//     float: none;
+//     width: 100%;
+//     min-height: 0;
+
+//     &.show {
+//       transform: translate3d(0, 0, 0);
+//     }
+//   }
+
+//   .menu-nav {
+//     height: 75%;
+//     transform: translate3d(-100%, 0, 0);
+//   }
+
+// .nav-item {
+// display: block;
+// position: inherit;
+// margin-top: 5%;
+// top: -22%;
+// margin-bottom: 10%;
+// }
+
+//   .menu-branding {
+//     height: 25%;
+//     transform: translate3d(100%, 0, 0);
+
+//     .portrait {
+//       background: $portrait-small;
+//       width: 156px;
+//       height: 156px;
+//     }
+//   }
+// }
+
+// .about-info {
+//   grid-template-areas:
+//     "bioimage"
+//     "bio"
+//     "job1"
+//     "job2"
+//     "job3";
+
+//   grid-template-columns: 1fr;
+
+//   .bio-image {
+//     background: $portrait-small;
+//     width: 156px;
+//     height: 195px;
+//   }
+
+//   .bio {
+//     font-size: 1rem;
+//   }
+// }
+
+// .projects {
+//   grid-template-columns: repeat(2, 1fr);
+// }
+
+// .contact-info {
+// grid-template-areas:
+//   "box-1"
+//   "box-2"
+//   "box-3";
+
+// grid-template-columns: 1fr;
+// }
+// }
+
+// @include mediaSm {
+//   main {
+//     padding: 2rem;
+//     #home h1 {
+//       margin-top: 10vh;
+//     }
+
+//     .lg-heading {
+//       margin-top: 1rem;
+//       font-size: 5rem;
+//     }
+//   }
+//   .projects {
+//     grid-template-columns: 1fr;
+//   }
+// }

@@ -131,30 +131,41 @@
 .contact-info {
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: auto auto auto auto auto auto; }
-  .contact-info #box-1 {
-    grid-area: 1 / 1 / span 1 / span 2; }
-  .contact-info #box-2 {
-    grid-area: 3 / 3 / span 1 / span 2; }
-  .contact-info #box-3 {
-    grid-area: 5 / 5 / span 1 / span 2; }
-  .contact-info div {
-    font-size: 1.7rem;
-    border: 2px #fff solid;
-    border-radius: 10px;
-    text-align: center;
-    padding: 1rem 0.5rem;
-    margin-bottom: 2rem;
-    -webkit-box-shadow: 0px 2px 4px 0.3px rgba(0, 0, 0, 0.8);
-    -moz-box-shadow: 0px 2px 4px 0.3px rgba(0, 0, 0, 0.8);
-    box-shadow: 0px 2px 4px 0.3px rgba(0, 0, 0, 0.8);
+  font-size: 1.5rem;
+  text-align: center;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto; }
+
+.email-box {
+  grid-column: 1 / 1;
+  grid-row: 1; }
+
+.linkedin-box {
+  grid-column: 2 / 2;
+  grid-row: 2; }
+
+.twitter-box {
+  grid-column: 3 / 3;
+  grid-row: 3; }
+
+.email-box,
+.linkedin-box,
+.twitter-box {
+  border: 3px #fff solid;
+  border-radius: 10px;
+  padding: 1rem 0rem;
+  transition: all 0.3s ease-out; }
+  .email-box:hover,
+  .linkedin-box:hover,
+  .twitter-box:hover {
+    background: #06f0ce;
+    color: #000;
+    padding: 2.5rem 3rem;
     transition: all 0.3s ease-out; }
-    .contact-info div:hover {
-      padding: 2rem 2rem;
-      background: #06f0ce;
+    .email-box:hover span,
+    .linkedin-box:hover span,
+    .twitter-box:hover span {
       color: #000; }
-      .contact-info div:hover span {
-        color: #000; }
 
 main {
   padding: 4rem;
@@ -278,72 +289,67 @@ header {
   color: #fff;
   height: 60px; }
 
-@media screen and (min-width: 769px) and (max-width: 1170px) {
-  main .lg-heading {
-    font-size: 4.5rem; }
-  main .sm-heading {
-    margin-bottom: 1.6rem;
-    padding: 0.15rem 0.8rem; }
-  .about-info .bio {
+@media screen and (min-width: 950px) and (max-width: 1350px) {
+  .contact-info {
+    grid-gap: 1.5rem;
     font-size: 1rem; }
-  .about-info .job {
-    font-size: 0.85rem; }
-  .projects {
-    grid-template-columns: repeat(3, 1fr); }
-  .contact-info div {
-    font-size: 1.15rem; }
-    .contact-info div:hover {
-      padding: 1.5rem 1.5rem; } }
+  .email-box,
+  .linkedin-box,
+  .twitter-box {
+    padding: 0.8rem 0rem; }
+    .email-box:hover,
+    .linkedin-box:hover,
+    .twitter-box:hover {
+      padding: 1.8rem 2.2rem; } }
 
-@media screen and (max-width: 768px) {
-  main {
-    align-items: center;
-    text-align: center; }
-    main .lg-heading {
-      font-size: 4.1rem; }
-    main .sm-heading {
-      font-size: 1.22rem;
-      margin-bottom: 1rem;
-      padding: 0.2rem 0rem; }
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show,
-    div.menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 77vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 20px; }
-  .menu-branding {
-    height: 23vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      background: url(/dist/img/portrait_small.jpg);
-      width: 156px;
-      height: 156px; }
-  .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
-    grid-template-columns: 1fr; }
-    .about-info .bio-image {
-      background: url(/dist/img/portrait_small.jpg);
-      width: 156px;
-      height: 195px; }
-    .about-info .bio {
-      grid-area: bio;
-      font-size: 1.1rem; }
-  .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+@media screen and (min-width: 911px) and (max-width: 949px) {
+  .contact-info {
+    grid-gap: 1rem;
+    font-size: 1rem; }
+  .email-box,
+  .linkedin-box,
+  .twitter-box {
+    border: 1.5px #fff solid;
+    padding: 0.5rem 0rem; }
+    .email-box:hover,
+    .linkedin-box:hover,
+    .twitter-box:hover {
+      padding: 1.5rem 2rem; } }
 
-@media screen and (max-width: 500px) {
-  main {
-    padding: 2rem; }
-    main #home h1 {
-      margin-top: 10vh; }
-    main .lg-heading {
-      margin-top: 1rem;
-      font-size: 5rem; }
-  .projects {
-    grid-template-columns: 1fr; } }
+@media screen and (min-width: 835px) and (max-width: 910px) {
+  .contact-info {
+    grid-gap: 0.7rem;
+    font-size: 0.9rem; }
+  .email-box,
+  .linkedin-box,
+  .twitter-box {
+    border: 1.4px #fff solid;
+    padding: 0.5rem 0rem; }
+    .email-box:hover,
+    .linkedin-box:hover,
+    .twitter-box:hover {
+      padding: 1.35rem 2.2rem; } }
+
+@media screen and (min-width: 1px) and (max-width: 834px) {
+  .contact-info {
+    grid-gap: 2rem;
+    font-size: 1rem;
+    grid-template-columns: auto auto auto auto; }
+  .email-box {
+    grid-column: 1 / span 2;
+    grid-row: 1; }
+  .linkedin-box {
+    grid-column: 2 / span 2;
+    grid-row: 2; }
+  .twitter-box {
+    grid-column: 3 / span 2;
+    grid-row: 3; }
+  .email-box,
+  .linkedin-box,
+  .twitter-box {
+    border: 1.5px #fff solid;
+    padding: 0.8rem 0rem; }
+    .email-box:hover,
+    .linkedin-box:hover,
+    .twitter-box:hover {
+      padding: 1.35rem 2.2rem; } }
