@@ -41,74 +41,44 @@ $portrait-small: url(/dist/img/portrait_small.jpg);
 }
 
 // Media Query Mixins
-// @mixin mediaSm {
-//   @media screen and (max-width: 500px) {
-//     @content;
-//   }
-// }
-
-// @mixin mediaMd {
-//   @media screen and (max-width: 768px) {
-//     @content;
-//   }
-// }
-
-@mixin mediaSeven {
-  @media screen and (min-width: 1px) and (max-width: 677px) {
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
     @content;
   }
 }
 
-@mixin mediaSix {
-  @media screen and (min-width: 678px) and (max-width: 700px) {
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
     @content;
   }
 }
 
-@mixin mediaFive {
-  @media screen and (min-width: 701px) and (max-width: 767px) {
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
     @content;
   }
 }
 
-@mixin mediaFour {
-  @media screen and (min-width: 768px) and (max-width: 793px) {
-    @content;
-  }
-}
-
-@mixin mediaThree {
-  @media screen and (min-width: 794px) and (max-width: 955px) {
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
     @content;
   }
 }
 
 @mixin mediaTwo {
-  @media screen and (min-width: 956px) and (max-width: 1196px) {
+  @media screen and (min-width: 769px) and (max-width: 950px) {
     @content;
   }
 }
 
 @mixin mediaOne {
-  @media screen and (min-width: 1197px) and (max-width: 1401px) {
+  @media screen and (min-width: 951px) and (max-width: 1350px) {
     @content;
   }
 }
 
-// @mixin mediaMax {
-//   @media screen and (min-width: 1431px) {
-//     @content;
-//   }
-// }
-
-// @mixin mediaLg {
-//   @media screen and (min-width: 769px) and (max-width: 1170px) {
-//     @content;
-//   }
-// }
-
-// @mixin mediaXl {
-//   @media screen and (min-width: 1171px) {
-//     @content;
-//   }
-// }
+@mixin mediaMax {
+  @media screen and (min-width: 1351px) {
+    @content;
+  }
+}

@@ -3,22 +3,24 @@
   grid-gap: 1.5rem;
   font-size: 1.5rem;
   text-align: center;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
+  // grid-template-columns: repeat(auto-fit, minmax(33.33%, 1fr));
+
   grid-template-rows: repeat(3, auto);
 }
 
 .email-box {
-  grid-column: 1 / 1;
+  grid-column: 1 / span 1;
   grid-row: 1;
 }
 
 .linkedin-box {
-  grid-column: 2 / 2;
+  grid-column: 2 / span 1;
   grid-row: 2;
 }
 
 .twitter-box {
-  grid-column: 3 / 3;
+  grid-column: 3 / span 1;
   grid-row: 3;
 }
 
@@ -27,13 +29,13 @@
 .twitter-box {
   border: 1.5px #fff solid;
   border-radius: 9px;
-  padding: 1rem 0rem;
+  padding: 1.5rem 0rem;
   @include easeOut;
 
   &:hover {
     background: $secondary-color;
     color: set-text-color($secondary-color);
-    padding: 2.3rem 4.3rem;
+    padding: 2.5rem 8.5rem;
     @include easeOut;
 
     span {

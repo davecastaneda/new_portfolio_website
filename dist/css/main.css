@@ -90,6 +90,22 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+main {
+  padding: 4rem;
+  height: 100%;
+  min-height: calc(100vh - 60px); }
+  main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      padding: 0.4rem;
+      transition: all 0.3s ease-out; }
+      main .icons a:hover {
+        color: #06f0ce; }
+  main#home {
+    overflow: hidden; }
+    main#home h1 {
+      margin-top: 20vh; }
+
 .about-info {
   display: grid;
   gap: 2rem;
@@ -128,61 +144,6 @@
       font-style: italic;
       text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4); }
 
-.contact-info {
-  display: grid;
-  grid-gap: 1.5rem;
-  font-size: 1.5rem;
-  text-align: center;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(3, auto); }
-
-.email-box {
-  grid-column: 1 / 1;
-  grid-row: 1; }
-
-.linkedin-box {
-  grid-column: 2 / 2;
-  grid-row: 2; }
-
-.twitter-box {
-  grid-column: 3 / 3;
-  grid-row: 3; }
-
-.email-box,
-.linkedin-box,
-.twitter-box {
-  border: 1.5px #fff solid;
-  border-radius: 9px;
-  padding: 1rem 0rem;
-  transition: all 0.3s ease-out; }
-  .email-box:hover,
-  .linkedin-box:hover,
-  .twitter-box:hover {
-    background: #06f0ce;
-    color: #000;
-    padding: 2.3rem 4.3rem;
-    transition: all 0.3s ease-out; }
-    .email-box:hover span,
-    .linkedin-box:hover span,
-    .twitter-box:hover span {
-      color: #000; }
-
-main {
-  padding: 4rem;
-  height: 100%;
-  min-height: calc(100vh - 60px); }
-  main .icons {
-    margin-top: 1rem; }
-    main .icons a {
-      padding: 0.4rem;
-      transition: all 0.3s ease-out; }
-      main .icons a:hover {
-        color: #06f0ce; }
-  main#home {
-    overflow: hidden; }
-    main#home h1 {
-      margin-top: 20vh; }
-
 .projects {
   display: grid;
   gap: 2rem;
@@ -199,26 +160,62 @@ main {
       opacity: 0.6;
       transition: all 0.3s ease-out; }
 
-.btn, .btn-dark {
+.btn-dark {
   display: block;
   text-align: center;
   padding: 0.7rem 0.7rem;
-  border: 0;
-  margin-top: 0.5rem;
-  margin-bottom: 0.6rem;
-  -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.8);
-  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.8); }
-  .btn:hover, .btn-dark:hover {
-    background: #06f0ce;
-    color: #000; }
-
-.btn-dark {
   background: black;
   color: #fff;
   border-radius: 50px;
   border: 1.4px #fff solid;
+  margin-top: 0.5rem;
+  margin-bottom: 0.6rem;
+  -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.8);
   transition: all 0.3s ease-out; }
+  .btn-dark:hover {
+    background: #06f0ce;
+    color: #000; }
+
+.contact-info {
+  display: grid;
+  grid-gap: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto); }
+
+.email-box {
+  grid-column: 1 / span 1;
+  grid-row: 1; }
+
+.linkedin-box {
+  grid-column: 2 / span 1;
+  grid-row: 2; }
+
+.twitter-box {
+  grid-column: 3 / span 1;
+  grid-row: 3; }
+
+.email-box,
+.linkedin-box,
+.twitter-box {
+  border: 1.5px #fff solid;
+  border-radius: 9px;
+  padding: 1.5rem 0rem;
+  transition: all 0.3s ease-out; }
+  .email-box:hover,
+  .linkedin-box:hover,
+  .twitter-box:hover {
+    background: #06f0ce;
+    color: #000;
+    padding: 2.5rem 8.5rem;
+    transition: all 0.3s ease-out; }
+    .email-box:hover span,
+    .linkedin-box:hover span,
+    .twitter-box:hover span {
+      color: #000; }
 
 * {
   box-sizing: border-box; }
@@ -288,105 +285,3 @@ header {
   background: #222425;
   color: #fff;
   height: 60px; }
-
-@media screen and (min-width: 1197px) and (max-width: 1401px) {
-  .contact-info {
-    grid-gap: 1rem;
-    font-size: 1.3rem; }
-  .email-box:hover,
-  .linkedin-box:hover,
-  .twitter-box:hover {
-    padding: 2rem 3.4rem; } }
-
-@media screen and (min-width: 956px) and (max-width: 1196px) {
-  .contact-info {
-    grid-gap: 0.7rem;
-    font-size: 1rem; }
-  .email-box:hover,
-  .linkedin-box:hover,
-  .twitter-box:hover {
-    padding: 1.7rem 3rem; } }
-
-@media screen and (min-width: 794px) and (max-width: 955px) {
-  .contact-info {
-    grid-gap: 1.7rem;
-    font-size: 1rem;
-    grid-template-columns: repeat(4, auto); }
-  .email-box {
-    grid-column: 1 / span 2; }
-  .linkedin-box {
-    grid-column: 2 / span 2; }
-  .twitter-box {
-    grid-column: 3 / span 2; }
-  .email-box:hover,
-  .linkedin-box:hover,
-  .twitter-box:hover {
-    padding: 1.7rem 4.7rem; } }
-
-@media screen and (min-width: 768px) and (max-width: 793px) {
-  .contact-info {
-    grid-gap: 1.5rem;
-    font-size: 1rem;
-    grid-template-columns: repeat(4, auto); }
-  .email-box {
-    grid-column: 1 / span 2; }
-  .linkedin-box {
-    grid-column: 2 / span 2; }
-  .twitter-box {
-    grid-column: 3 / span 2; }
-  .email-box:hover,
-  .linkedin-box:hover,
-  .twitter-box:hover {
-    padding: 1.5rem 4.3rem; } }
-
-@media screen and (min-width: 701px) and (max-width: 767px) {
-  .contact-info {
-    grid-gap: 1.8rem;
-    font-size: 1rem;
-    grid-template-columns: repeat(7, auto); }
-  .email-box {
-    grid-column: 1 / span 5; }
-  .linkedin-box {
-    grid-column: 2 / span 5; }
-  .twitter-box {
-    grid-column: 3 / span 5; }
-  .email-box:hover,
-  .linkedin-box:hover,
-  .twitter-box:hover {
-    padding: 2rem 7rem; } }
-
-@media screen and (min-width: 678px) and (max-width: 700px) {
-  .contact-info {
-    grid-gap: 1rem;
-    font-size: 1rem;
-    grid-template-columns: repeat(7, auto); }
-  .email-box {
-    grid-column: 1 / span 5; }
-    .email-box:hover {
-      padding: 1.75rem 6.5rem; }
-  .linkedin-box {
-    grid-column: 2 / span 5; }
-    .linkedin-box:hover {
-      padding: 1.75rem 6rem; }
-  .twitter-box {
-    grid-column: 3 / span 5; }
-    .twitter-box:hover {
-      padding: 1.75rem 8rem; } }
-
-@media screen and (min-width: 1px) and (max-width: 677px) {
-  .contact-info {
-    grid-gap: 1.5rem;
-    font-size: 1rem;
-    grid-template-columns: repeat(10, auto); }
-  .email-box {
-    grid-column: 1 / span 8; }
-    .email-box:hover {
-      padding: 1.75rem 7rem; }
-  .linkedin-box {
-    grid-column: 2 / span 8; }
-    .linkedin-box:hover {
-      padding: 1.75rem 6.5rem; }
-  .twitter-box {
-    grid-column: 3 / span 8; }
-    .twitter-box:hover {
-      padding: 1.75rem 8.5rem; } }
