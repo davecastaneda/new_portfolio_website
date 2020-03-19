@@ -59,26 +59,56 @@ $portrait-small: url(/dist/img/portrait_small.jpg);
   }
 }
 
-@mixin mediaXl {
-  @media screen and (min-width: 1171px) {
+// @mixin mediaFour {
+//   @media screen and (min-width: 1px) and (max-width: 1px) {
+//     @content;
+//   }
+// }
+
+@mixin mediaSeven {
+  @media screen and (min-width: 1px) and (max-width: 859px) {
+    @content;
+  }
+}
+
+@mixin mediaSix {
+  @media screen and (min-width: 860px) and (max-width: 908px) {
+    @content;
+  }
+}
+
+@mixin mediaFive {
+  @media screen and (min-width: 909px) and (max-width: 934px) {
+    @content;
+  }
+}
+
+@mixin mediaFour {
+  @media screen and (min-width: 935px) and (max-width: 1153px) {
+    @content;
+  }
+}
+
+@mixin mediaThree {
+  @media screen and (min-width: 1154px) and (max-width: 1254px) {
     @content;
   }
 }
 
 @mixin mediaTwo {
-  @media screen and (min-width: 769px) and (max-width: 950px) {
+  @media screen and (min-width: 1255px) and (max-width: 1529px) {
     @content;
   }
 }
 
 @mixin mediaOne {
-  @media screen and (min-width: 951px) and (max-width: 1350px) {
+  @media screen and (min-width: 1530px) and (max-width: 1690px) {
     @content;
   }
 }
 
 @mixin mediaMax {
-  @media screen and (min-width: 1351px) {
+  @media screen and (min-width: 1691px) {
     @content;
   }
 }

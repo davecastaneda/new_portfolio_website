@@ -1,178 +1,242 @@
-// @include mediaLg {
-//   main {
-//     .lg-heading {
-//       font-size: 4.5rem;
-//     }
+@include mediaMax {
+}
 
-//     .sm-heading {
-//       margin-bottom: 1.6rem;
-//       padding: 0.15rem 0.8rem;
-//     }
-//   }
-//   .about-info {
-//     .bio {
-//       font-size: 1rem;
-//     }
+@include mediaOne {
+  .boxes {
+    div {
+      padding: 1.6rem 2rem;
 
-//     .job {
-//       font-size: 0.85rem;
-//     }
-//   }
+      &:hover {
+        padding: 2.8rem 4.35rem;
+      }
+    }
+  }
+}
 
-//   .projects {
-//     grid-template-columns: repeat(3, 1fr);
-//   }
-// }
+@include mediaTwo {
+  .boxes {
+    div {
+      padding: 1.6rem 2rem;
+      margin-bottom: 2.5rem;
+      margin-right: 2.5rem;
 
-// @include mediaMd {
-//   main {
-//     align-items: center;
-//     text-align: center;
+      &:hover {
+        padding: 2.8rem 4.35rem;
+      }
+    }
+  }
+}
 
-//     .lg-heading {
-//       font-size: 4.1rem;
-//     }
+@include mediaThree {
+  .boxes {
+    div {
+      //   font-size: 1rem;
+      padding: 1.5rem 1.5rem;
+      margin-bottom: 2.5rem;
+      //   margin-right: 2.5rem;
 
-//     .sm-heading {
-//       font-size: 1.22rem;
-//       margin-bottom: 1rem;
-//       padding: 0.2rem 0rem;
-//     }
-//   }
+      &:hover {
+        padding: 2.5rem 3.7rem;
+      }
+    }
+  }
+}
 
-//   nav.menu {
-//     height: 100%;
-//     width: 100%;
+@include mediaFour {
+  .boxes {
+    margin-top: 3.5rem;
+    div {
+      font-size: 1rem;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2.5rem;
+      margin-right: 2rem;
 
-//     ul.menu-nav,
-//     div.menu-branding {
-//       float: none;
-//       width: 100%;
-//       min-height: 0;
+      &:hover {
+        padding: 2.5rem 3.7rem;
+      }
+    }
+  }
+}
 
-//       &.show {
-//         transform: translate3d(0, 0, 0);
-//       }
-//     }
+@include mediaFive {
+  .boxes {
+    margin-top: 3.5rem;
+    div {
+      font-size: 1rem;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2.5rem;
+      margin-right: 2rem;
+      margin-left: 2rem;
 
-//     .menu-nav {
-//       height: 75%;
-//       transform: translate3d(-100%, 0, 0);
-//     }
+      &:hover {
+        padding: 2.2rem 3.5rem;
+      }
+    }
+  }
+}
 
-//     .nav-item {
-//       display: block;
-//       position: inherit;
-//       margin-top: 5%;
-//       top: -22%;
-//       margin-bottom: 10%;
-//     }
+@include mediaSix {
+  .boxes {
+    margin-top: 3.5rem;
+    div {
+      font-size: 1rem;
+      padding: 1.5rem 1.5rem;
+      margin-bottom: 2.5rem;
 
-//     .menu-branding {
-//       height: 25%;
-//       transform: translate3d(100%, 0, 0);
+      &:hover {
+        padding: 2rem 3.2rem;
+      }
+    }
+  }
+}
 
-//       .portrait {
-//         background: $portrait-small;
-//         width: 156px;
-//         height: 156px;
-//       }
-//     }
-//   }
+@include mediaSeven {
+  .boxes {
+    margin-top: 3.5rem;
+    div {
+      font-size: 1rem;
+      padding: 1.35rem 1.5rem;
+      margin-bottom: 2.65rem;
+      //   margin-right: 2.5rem;
+      //   margin-left: 2.5rem;
 
-//   .about-info {
-//     grid-template-areas:
-//       "bioimage"
-//       "bio"
-//       "job1"
-//       "job2"
-//       "job3";
+      &:hover {
+        padding: 2rem 3.75rem;
+      }
+    }
+  }
+}
 
-//     grid-template-columns: 1fr;
+@include mediaLg {
+  main {
+    .lg-heading {
+      font-size: 4.5rem;
+    }
 
-//     .bio-image {
-//       background: $portrait-small;
-//       width: 156px;
-//       height: 195px;
-//     }
+    .sm-heading {
+      margin-bottom: 1.6rem;
+      padding: 0.15rem 0.8rem;
+    }
+  }
+  .about-info {
+    .bio {
+      font-size: 1rem;
+    }
 
-//     .bio {
-//       font-size: 1rem;
-//     }
-//   }
+    .job {
+      font-size: 0.85rem;
+    }
+  }
 
-//   .projects {
-//     grid-template-columns: repeat(2, 1fr);
-//   }
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
-//   .contact-info {
-//     grid-template-areas:
-//       "box-1"
-//       "box-2"
-//       "box-3";
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
 
-//     grid-template-columns: 1fr;
-//   }
-// }
+    .lg-heading {
+      font-size: 4.1rem;
+    }
 
-// @include mediaSm {
-//   main {
-//     padding: 2rem;
-//     #home h1 {
-//       margin-top: 10vh;
-//     }
+    .sm-heading {
+      font-size: 1.22rem;
+      margin-bottom: 1rem;
+      padding: 0.2rem 0rem;
+    }
+  }
 
-//     .lg-heading {
-//       margin-top: 1rem;
-//       font-size: 5rem;
-//     }
-//   }
-//   .projects {
-//     grid-template-columns: 1fr;
-//   }
-// }
+  nav.menu {
+    height: 100%;
+    width: 100%;
 
-// @include mediaOne {
-//   .contact-info {
-//     grid-gap: 1rem;
-//     font-size: 1rem;
-//   }
+    ul.menu-nav,
+    div.menu-branding {
+      float: none;
+      width: 100%;
+      min-height: 0;
 
-//   .email-box,
-//   .linkedin-box,
-//   .twitter-box {
-//     &:hover {
-//       padding: 2rem 2.5rem;
-//     }
-//   }
-// }
+      &.show {
+        transform: translate3d(0, 0, 0);
+      }
+    }
 
-// @include mediaTwo {
-//   .contact-info {
-//     grid-gap: 1rem;
-//     font-size: 1rem;
-//   }
+    .menu-nav {
+      height: 75%;
+      transform: translate3d(-100%, 0, 0);
+    }
 
-//   .email-box {
-//     grid-column: 1 / span 14;
-//   }
+    .nav-item {
+      display: block;
+      position: inherit;
+      margin-top: 5%;
+      top: -22%;
+      margin-bottom: 10%;
+    }
 
-//   .linkedin-box {
-//     grid-column: 9 / span 14;
-//   }
+    .menu-branding {
+      height: 25%;
+      transform: translate3d(100%, 0, 0);
 
-//   .twitter-box {
-//     grid-column: 17 / span 14;
+      .portrait {
+        background: $portrait-small;
+        width: 156px;
+        height: 156px;
+      }
+    }
+  }
 
-//     &:hover {
-//       padding: 2rem 5rem;
-//     }
-//   }
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
 
-//   .email-box,
-//   .linkedin-box {
-//     &:hover {
-//       padding: 2rem 3rem;
-//     }
-//   }
-// }
+    grid-template-columns: 1fr;
+
+    .bio-image {
+      background: $portrait-small;
+      width: 156px;
+      height: 195px;
+    }
+
+    .bio {
+      font-size: 1rem;
+    }
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  //   .contact-info {
+  //     grid-template-areas:
+  //       "box-1"
+  //       "box-2"
+  //       "box-3";
+
+  //     grid-template-columns: 1fr;
+  //   }
+}
+
+@include mediaSm {
+  main {
+    padding: 2rem;
+    #home h1 {
+      margin-top: 10vh;
+    }
+
+    .lg-heading {
+      margin-top: 1rem;
+      font-size: 5rem;
+    }
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
