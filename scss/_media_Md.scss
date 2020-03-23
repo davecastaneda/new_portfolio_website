@@ -8,48 +8,42 @@ main {
 
   .sm-heading {
     font-size: 1.22rem;
-    margin-bottom: 1rem;
     padding: 0.2rem 0rem;
   }
 }
 
-nav.menu {
-  height: 100%;
+ul.menu-nav,
+div.menu-branding {
+  float: none;
   width: 100%;
+  min-height: 0;
 
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0;
-
-    &.show {
-      transform: translate3d(0, 0, 0);
-    }
+  &.show {
+    transform: translate3d(0, 0, 0);
   }
+}
 
-  .menu-nav {
-    height: 75%;
-    transform: translate3d(-100%, 0, 0);
-  }
+.menu-nav {
+  height: 75vh;
+  transform: translate3d(-100%, 0, 0);
+}
 
-  .nav-item {
-    display: block;
-    position: inherit;
-    margin-top: 5%;
-    top: -22%;
-    margin-bottom: 10%;
-  }
+.nav-item {
+  display: block;
+  position: inherit;
+  margin-top: 5%;
+  top: -22%;
+  margin-bottom: 10%;
+}
 
-  .menu-branding {
-    height: 25%;
-    transform: translate3d(100%, 0, 0);
+.menu-branding {
+  height: 25vh;
+  transform: translate3d(100%, 0, 0);
 
-    .portrait {
-      background: $portrait-small;
-      width: 156px;
-      height: 156px;
-    }
+  .portrait {
+    background: $portrait-small;
+    width: 156px;
+    height: 156px;
   }
 }
 
@@ -71,6 +65,10 @@ nav.menu {
 
   .bio {
     font-size: 1rem;
+  }
+
+  .job {
+    font-size: 0.85rem;
   }
 }
 

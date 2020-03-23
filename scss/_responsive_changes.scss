@@ -170,7 +170,7 @@
 }
 
 @include mediaSix {
-  @import "media_Lg";
+  @import "media_Md";
   @import "contact_flex";
 
   .boxes {
@@ -237,7 +237,7 @@
 }
 
 @include mediaEight {
-  @import "media_Md";
+  @import "media_Sm";
   @import "contact_flex";
 
   .boxes {
