@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Responsive Portfolio Website",
   "main": "index.js",
+  "homepage": "https://davecastaneda.github.io/new_portfolio_website",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -15,7 +17,6 @@
   "bugs": {
     "url": "https://github.com/davecastaneda/new_portfolio_website/issues"
   },
-  "homepage": "https://github.com/davecastaneda/new_portfolio_website#readme",
   "dependencies": {
     "node-sass": "^4.13.1"
   }
