@@ -40,25 +40,6 @@ $portrait-small: url(/dist/img/portrait_small.jpg);
   }
 }
 
-// Media Query Mixins
-// @mixin mediaSm {
-//   @media screen and (max-width: 500px) {
-//     @content;
-//   }
-// }
-
-// @mixin mediaMd {
-//   @media screen and (max-width: 768px) {
-//     @content;
-//   }
-// }
-
-// @mixin mediaLg {
-//   @media screen and (min-width: 769px) and (max-width: 1170px) {
-//     @content;
-//   }
-// }
-
 @mixin mediaNine {
   @media screen and (min-width: 1px) and (max-width: 524px) {
     @content;
@@ -72,7 +53,7 @@ $portrait-small: url(/dist/img/portrait_small.jpg);
 }
 
 @mixin mediaSeven {
-  @media screen and (min-width: 540px) and (max-width: 869px) {
+  @media screen and (min-width: 541px) and (max-width: 869px) {
     @content;
   }
 }

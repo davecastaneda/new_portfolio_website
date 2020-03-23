@@ -1,0 +1,23 @@
+main {
+  .lg-heading {
+    font-size: 4.5rem;
+  }
+
+  .sm-heading {
+    margin-bottom: 1.6rem;
+    padding: 0.15rem 0.8rem;
+  }
+}
+.about-info {
+  .bio {
+    font-size: 1rem;
+  }
+
+  .job {
+    font-size: 0.85rem;
+  }
+}
+
+.projects {
+  grid-template-columns: repeat(3, 1fr);
+}
