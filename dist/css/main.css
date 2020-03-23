@@ -580,7 +580,7 @@ header {
     .boxes .twitter-box:hover {
       padding: 2.2rem 6.3rem; } }
 
-@media screen and (min-width: 1px) and (max-width: 526px) {
+@media screen and (min-width: 1px) and (max-width: 524px) {
   .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -609,4 +609,4 @@ header {
   .boxes .twitter-box {
     padding: 1.5rem 3.7rem; }
     .boxes .twitter-box:hover {
-      padding: 2rem 6rem; } }
+      padding: 2rem 5.9rem; } }
