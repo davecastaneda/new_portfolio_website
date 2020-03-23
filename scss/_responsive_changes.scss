@@ -1,242 +1,416 @@
 @include mediaMax {
+  @import "contact_grid";
+
+  .email-box {
+    &:hover {
+      padding: 3rem 8.5rem;
+    }
+  }
+
+  .linkedin-box {
+    &:hover {
+      padding: 3rem 7.5rem;
+    }
+  }
+
+  .twitter-box {
+    &:hover {
+      padding: 3rem 12rem;
+    }
+  }
 }
 
 @include mediaOne {
-  .boxes {
-    div {
-      padding: 1.6rem 2rem;
+  @import "contact_grid";
 
-      &:hover {
-        padding: 2.8rem 4.35rem;
-      }
+  .email-box {
+    &:hover {
+      padding: 3rem 5.5rem;
+    }
+  }
+
+  .linkedin-box {
+    &:hover {
+      padding: 3rem 4.5rem;
+    }
+  }
+
+  .twitter-box {
+    &:hover {
+      padding: 3rem 9rem;
     }
   }
 }
 
 @include mediaTwo {
-  .boxes {
-    div {
-      padding: 1.6rem 2rem;
-      margin-bottom: 2.5rem;
-      margin-right: 2.5rem;
+  @import "contact_grid";
 
-      &:hover {
-        padding: 2.8rem 4.35rem;
-      }
+  .boxes {
+    grid-gap: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .email-box {
+    &:hover {
+      padding: 2.5rem 7.5rem;
+    }
+  }
+
+  .linkedin-box {
+    &:hover {
+      padding: 2.5rem 7rem;
+    }
+  }
+
+  .twitter-box {
+    &:hover {
+      padding: 2.5rem 10rem;
     }
   }
 }
 
 @include mediaThree {
-  .boxes {
-    div {
-      //   font-size: 1rem;
-      padding: 1.5rem 1.5rem;
-      margin-bottom: 2.5rem;
-      //   margin-right: 2.5rem;
+  @import "contact_grid";
 
-      &:hover {
-        padding: 2.5rem 3.7rem;
-      }
+  .boxes {
+    grid-gap: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .email-box {
+    &:hover {
+      padding: 2.5rem 5.5rem;
+    }
+  }
+
+  .linkedin-box {
+    &:hover {
+      padding: 2.5rem 4.5rem;
+    }
+  }
+
+  .twitter-box {
+    &:hover {
+      padding: 2.5rem 7.5rem;
     }
   }
 }
 
 @include mediaFour {
+  @import "contact_flex";
+
   .boxes {
-    margin-top: 3.5rem;
     div {
-      font-size: 1rem;
-      padding: 1.5rem 2rem;
-      margin-bottom: 2.5rem;
       margin-right: 2rem;
+      margin-left: 2rem;
+    }
+
+    .email-box {
+      padding: 1.7rem 2.5rem;
 
       &:hover {
-        padding: 2.5rem 3.7rem;
+        padding: 2.5rem 5.5rem;
+      }
+    }
+
+    .linkedin-box {
+      padding: 1.7rem 1.75rem;
+
+      &:hover {
+        padding: 2.5rem 4.5rem;
+      }
+    }
+
+    .twitter-box {
+      padding: 1.7rem 5.2rem;
+
+      &:hover {
+        padding: 2.5rem 8.5rem;
       }
     }
   }
 }
 
 @include mediaFive {
+  @import "contact_flex";
+
   .boxes {
-    margin-top: 3.5rem;
     div {
-      font-size: 1rem;
-      padding: 1.5rem 2rem;
-      margin-bottom: 2.5rem;
       margin-right: 2rem;
-      margin-left: 2rem;
+    }
+
+    .email-box {
+      padding: 1.7rem 1.5rem;
 
       &:hover {
-        padding: 2.2rem 3.5rem;
+        padding: 2.5rem 4rem;
+      }
+    }
+
+    .linkedin-box {
+      padding: 1.7rem 0.75rem;
+
+      &:hover {
+        padding: 2.5rem 3rem;
+      }
+    }
+
+    .twitter-box {
+      padding: 1.7rem 4.2rem;
+
+      &:hover {
+        padding: 2.5rem 7rem;
       }
     }
   }
 }
 
 @include mediaSix {
+  @import "contact_flex";
+
   .boxes {
-    margin-top: 3.5rem;
-    div {
-      font-size: 1rem;
+    .email-box {
       padding: 1.5rem 1.5rem;
-      margin-bottom: 2.5rem;
 
       &:hover {
-        padding: 2rem 3.2rem;
+        padding: 2.5rem 4rem;
+      }
+    }
+
+    .linkedin-box {
+      padding: 1.5rem 0.75rem;
+
+      &:hover {
+        padding: 2.5rem 3rem;
+      }
+    }
+
+    .twitter-box {
+      padding: 1.5rem 4.2rem;
+
+      &:hover {
+        padding: 2.5rem 7rem;
       }
     }
   }
 }
 
 @include mediaSeven {
+  @import "contact_flex";
+
   .boxes {
-    margin-top: 3.5rem;
     div {
-      font-size: 1rem;
-      padding: 1.35rem 1.5rem;
-      margin-bottom: 2.65rem;
-      //   margin-right: 2.5rem;
-      //   margin-left: 2.5rem;
+      margin-right: 4rem;
+      margin-left: 4rem;
+    }
+
+    .email-box {
+      padding: 1.5rem 1.5rem;
 
       &:hover {
-        padding: 2rem 3.75rem;
+        padding: 2.5rem 4.5rem;
+      }
+    }
+
+    .linkedin-box {
+      padding: 1.5rem 0.75rem;
+
+      &:hover {
+        padding: 2.5rem 4rem;
+      }
+    }
+
+    .twitter-box {
+      padding: 1.5rem 4.2rem;
+
+      &:hover {
+        padding: 2.5rem 7rem;
       }
     }
   }
 }
 
-@include mediaLg {
-  main {
-    .lg-heading {
-      font-size: 4.5rem;
-    }
+@include mediaEight {
+  @import "contact_flex";
 
-    .sm-heading {
-      margin-bottom: 1.6rem;
-      padding: 0.15rem 0.8rem;
-    }
-  }
-  .about-info {
-    .bio {
-      font-size: 1rem;
-    }
+  .boxes {
+    .email-box {
+      padding: 1.5rem 1.5rem;
 
-    .job {
-      font-size: 0.85rem;
-    }
-  }
-
-  .projects {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@include mediaMd {
-  main {
-    align-items: center;
-    text-align: center;
-
-    .lg-heading {
-      font-size: 4.1rem;
-    }
-
-    .sm-heading {
-      font-size: 1.22rem;
-      margin-bottom: 1rem;
-      padding: 0.2rem 0rem;
-    }
-  }
-
-  nav.menu {
-    height: 100%;
-    width: 100%;
-
-    ul.menu-nav,
-    div.menu-branding {
-      float: none;
-      width: 100%;
-      min-height: 0;
-
-      &.show {
-        transform: translate3d(0, 0, 0);
+      &:hover {
+        padding: 2.2rem 3.9rem;
       }
     }
 
-    .menu-nav {
-      height: 75%;
-      transform: translate3d(-100%, 0, 0);
+    .linkedin-box {
+      padding: 1.5rem 0.75rem;
+
+      &:hover {
+        padding: 2.2rem 3rem;
+      }
     }
 
-    .nav-item {
-      display: block;
-      position: inherit;
-      margin-top: 5%;
-      top: -22%;
-      margin-bottom: 10%;
-    }
+    .twitter-box {
+      padding: 1.5rem 4.2rem;
 
-    .menu-branding {
-      height: 25%;
-      transform: translate3d(100%, 0, 0);
-
-      .portrait {
-        background: $portrait-small;
-        width: 156px;
-        height: 156px;
+      &:hover {
+        padding: 2.2rem 6.3rem;
       }
     }
   }
-
-  .about-info {
-    grid-template-areas:
-      "bioimage"
-      "bio"
-      "job1"
-      "job2"
-      "job3";
-
-    grid-template-columns: 1fr;
-
-    .bio-image {
-      background: $portrait-small;
-      width: 156px;
-      height: 195px;
-    }
-
-    .bio {
-      font-size: 1rem;
-    }
-  }
-
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  //   .contact-info {
-  //     grid-template-areas:
-  //       "box-1"
-  //       "box-2"
-  //       "box-3";
-
-  //     grid-template-columns: 1fr;
-  //   }
 }
 
-@include mediaSm {
-  main {
-    padding: 2rem;
-    #home h1 {
-      margin-top: 10vh;
+@include mediaNine {
+  @import "contact_flex";
+
+  .boxes {
+    .email-box {
+      padding: 1.5rem 0.85rem;
+
+      &:hover {
+        padding: 2rem 3.25rem;
+      }
     }
 
-    .lg-heading {
-      margin-top: 1rem;
-      font-size: 5rem;
+    .linkedin-box {
+      padding: 1.5rem 0.3rem;
+
+      &:hover {
+        padding: 2rem 2.5rem;
+      }
+    }
+
+    .twitter-box {
+      padding: 1.5rem 3.7rem;
+
+      &:hover {
+        padding: 2rem 6rem;
+      }
     }
   }
-  .projects {
-    grid-template-columns: 1fr;
-  }
 }
+
+// @include mediaLg {
+//   main {
+//     .lg-heading {
+//       font-size: 4.5rem;
+//     }
+
+//     .sm-heading {
+//       margin-bottom: 1.6rem;
+//       padding: 0.15rem 0.8rem;
+//     }
+//   }
+//   .about-info {
+//     .bio {
+//       font-size: 1rem;
+//     }
+
+//     .job {
+//       font-size: 0.85rem;
+//     }
+//   }
+
+//   .projects {
+//     grid-template-columns: repeat(3, 1fr);
+//   }
+// }
+
+// @include mediaMd {
+//   main {
+//     align-items: center;
+//     text-align: center;
+
+//     .lg-heading {
+//       font-size: 4.1rem;
+//     }
+
+//     .sm-heading {
+//       font-size: 1.22rem;
+//       margin-bottom: 1rem;
+//       padding: 0.2rem 0rem;
+//     }
+//   }
+
+//   nav.menu {
+//     height: 100%;
+//     width: 100%;
+
+//     ul.menu-nav,
+//     div.menu-branding {
+//       float: none;
+//       width: 100%;
+//       min-height: 0;
+
+//       &.show {
+//         transform: translate3d(0, 0, 0);
+//       }
+//     }
+
+//     .menu-nav {
+//       height: 75%;
+//       transform: translate3d(-100%, 0, 0);
+//     }
+
+//     .nav-item {
+//       display: block;
+//       position: inherit;
+//       margin-top: 5%;
+//       top: -22%;
+//       margin-bottom: 10%;
+//     }
+
+//     .menu-branding {
+//       height: 25%;
+//       transform: translate3d(100%, 0, 0);
+
+//       .portrait {
+//         background: $portrait-small;
+//         width: 156px;
+//         height: 156px;
+//       }
+//     }
+//   }
+
+//   .about-info {
+//     grid-template-areas:
+//       "bioimage"
+//       "bio"
+//       "job1"
+//       "job2"
+//       "job3";
+
+//     grid-template-columns: 1fr;
+
+//     .bio-image {
+//       background: $portrait-small;
+//       width: 156px;
+//       height: 195px;
+//     }
+
+//     .bio {
+//       font-size: 1rem;
+//     }
+//   }
+
+//   .projects {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+// }
+
+// @include mediaSm {
+//   main {
+//     padding: 2rem;
+//     #home h1 {
+//       margin-top: 10vh;
+//     }
+
+//     .lg-heading {
+//       margin-top: 1rem;
+//       font-size: 5rem;
+//     }
+//   }
+//   .projects {
+//     grid-template-columns: 1fr;
+//   }
+// }

@@ -41,23 +41,23 @@ $portrait-small: url(/dist/img/portrait_small.jpg);
 }
 
 // Media Query Mixins
-@mixin mediaSm {
-  @media screen and (max-width: 500px) {
-    @content;
-  }
-}
+// @mixin mediaSm {
+//   @media screen and (max-width: 500px) {
+//     @content;
+//   }
+// }
 
-@mixin mediaMd {
-  @media screen and (max-width: 768px) {
-    @content;
-  }
-}
+// @mixin mediaMd {
+//   @media screen and (max-width: 768px) {
+//     @content;
+//   }
+// }
 
-@mixin mediaLg {
-  @media screen and (min-width: 769px) and (max-width: 1170px) {
-    @content;
-  }
-}
+// @mixin mediaLg {
+//   @media screen and (min-width: 769px) and (max-width: 1170px) {
+//     @content;
+//   }
+// }
 
 // @mixin mediaFour {
 //   @media screen and (min-width: 1px) and (max-width: 1px) {
@@ -65,50 +65,110 @@ $portrait-small: url(/dist/img/portrait_small.jpg);
 //   }
 // }
 
+// @mixin mediaSeven {
+//   @media screen and (min-width: 1px) and (max-width: 859px) {
+//     @content;
+//   }
+// }
+
+// @mixin mediaSix {
+//   @media screen and (min-width: 860px) and (max-width: 908px) {
+//     @content;
+//   }
+// }
+
+// @mixin mediaFive {
+//   @media screen and (min-width: 909px) and (max-width: 934px) {
+//     @content;
+//   }
+// }
+
+// @mixin mediaFour {
+//   @media screen and (min-width: 935px) and (max-width: 1153px) {
+//     @content;
+//   }
+// }
+
+// @mixin mediaThree {
+//   @media screen and (min-width: 1154px) and (max-width: 1254px) {
+//     @content;
+//   }
+// }
+
+// @mixin mediaTwo {
+//   @media screen and (min-width: 1255px) and (max-width: 1529px) {
+//     @content;
+//   }
+// }
+
+// @mixin mediaOne {
+//   @media screen and (min-width: 1530px) and (max-width: 1690px) {
+//     @content;
+//   }
+// }
+
+// @mixin mediaMax {
+//   @media screen and (min-width: 1691px) {
+//     @content;
+//   }
+// }
+
+@mixin mediaNine {
+  @media screen and (min-width: 1px) and (max-width: 526px) {
+    @content;
+  }
+}
+
+@mixin mediaEight {
+  @media screen and (min-width: 525px) and (max-width: 540px) {
+    @content;
+  }
+}
+
 @mixin mediaSeven {
-  @media screen and (min-width: 1px) and (max-width: 859px) {
+  @media screen and (min-width: 540px) and (max-width: 869px) {
     @content;
   }
 }
 
 @mixin mediaSix {
-  @media screen and (min-width: 860px) and (max-width: 908px) {
+  @media screen and (min-width: 870px) and (max-width: 929px) {
     @content;
   }
 }
 
 @mixin mediaFive {
-  @media screen and (min-width: 909px) and (max-width: 934px) {
+  @media screen and (min-width: 930px) and (max-width: 1024px) {
     @content;
   }
 }
 
 @mixin mediaFour {
-  @media screen and (min-width: 935px) and (max-width: 1153px) {
+  @media screen and (min-width: 1025px) and (max-width: 1144px) {
     @content;
   }
 }
 
 @mixin mediaThree {
-  @media screen and (min-width: 1154px) and (max-width: 1254px) {
+  @media screen and (min-width: 1145px) and (max-width: 1229px) {
     @content;
   }
 }
 
 @mixin mediaTwo {
-  @media screen and (min-width: 1255px) and (max-width: 1529px) {
+  @media screen and (min-width: 1230px) and (max-width: 1559px) {
     @content;
   }
 }
 
 @mixin mediaOne {
-  @media screen and (min-width: 1530px) and (max-width: 1690px) {
+  @media screen and (min-width: 1560px) and (max-width: 1670px) {
     @content;
   }
 }
 
 @mixin mediaMax {
-  @media screen and (min-width: 1691px) {
+  @media screen and (min-width: 1671px) {
     @content;
   }
 }

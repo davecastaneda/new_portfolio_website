@@ -178,25 +178,6 @@ main {
     background: #06f0ce;
     color: #000; }
 
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 2rem; }
-  .boxes div {
-    font-size: 1.5rem;
-    border: 2px #fff solid;
-    border-radius: 9px;
-    padding: 1.6rem 3.5rem;
-    transition: all 0.3s ease-out; }
-    .boxes div:hover {
-      padding: 2.8rem 7.1rem;
-      background: #06f0ce;
-      color: #000; }
-      .boxes div:hover span {
-        color: #000; }
-
 * {
   box-sizing: border-box; }
 
@@ -266,139 +247,366 @@ header {
   color: #fff;
   height: 60px; }
 
-@media screen and (min-width: 1530px) and (max-width: 1690px) {
-  .boxes div {
-    padding: 1.6rem 2rem; }
-    .boxes div:hover {
-      padding: 2.8rem 4.35rem; } }
-
-@media screen and (min-width: 1255px) and (max-width: 1529px) {
-  .boxes div {
-    padding: 1.6rem 2rem;
-    margin-bottom: 2.5rem;
-    margin-right: 2.5rem; }
-    .boxes div:hover {
-      padding: 2.8rem 4.35rem; } }
-
-@media screen and (min-width: 1154px) and (max-width: 1254px) {
-  .boxes div {
-    padding: 1.5rem 1.5rem;
-    margin-bottom: 2.5rem; }
-    .boxes div:hover {
-      padding: 2.5rem 3.7rem; } }
-
-@media screen and (min-width: 935px) and (max-width: 1153px) {
+@media screen and (min-width: 1671px) {
   .boxes {
-    margin-top: 3.5rem; }
-    .boxes div {
-      font-size: 1rem;
-      padding: 1.5rem 2rem;
-      margin-bottom: 2.5rem;
-      margin-right: 2rem; }
-      .boxes div:hover {
-        padding: 2.5rem 3.7rem; } }
+    display: grid;
+    grid-gap: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto); }
+  .email-box {
+    grid-column: 1 / span 1;
+    grid-row: 1; }
+  .linkedin-box {
+    grid-column: 2 / span 1;
+    grid-row: 2; }
+  .twitter-box {
+    grid-column: 3 / span 1;
+    grid-row: 3; }
+  .email-box,
+  .linkedin-box,
+  .twitter-box {
+    border: 1.5px #fff solid;
+    border-radius: 9px;
+    padding: 1.7rem 0rem;
+    transition: all 0.3s ease-out; }
+    .email-box:hover,
+    .linkedin-box:hover,
+    .twitter-box:hover {
+      background: #06f0ce;
+      color: #000;
+      transition: all 0.3s ease-out; }
+      .email-box:hover span,
+      .linkedin-box:hover span,
+      .twitter-box:hover span {
+        color: #000; }
+  .email-box:hover {
+    padding: 3rem 8.5rem; }
+  .linkedin-box:hover {
+    padding: 3rem 7.5rem; }
+  .twitter-box:hover {
+    padding: 3rem 12rem; } }
 
-@media screen and (min-width: 909px) and (max-width: 934px) {
+@media screen and (min-width: 1560px) and (max-width: 1670px) {
   .boxes {
-    margin-top: 3.5rem; }
-    .boxes div {
-      font-size: 1rem;
-      padding: 1.5rem 2rem;
-      margin-bottom: 2.5rem;
-      margin-right: 2rem;
-      margin-left: 2rem; }
-      .boxes div:hover {
-        padding: 2.2rem 3.5rem; } }
+    display: grid;
+    grid-gap: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto); }
+  .email-box {
+    grid-column: 1 / span 1;
+    grid-row: 1; }
+  .linkedin-box {
+    grid-column: 2 / span 1;
+    grid-row: 2; }
+  .twitter-box {
+    grid-column: 3 / span 1;
+    grid-row: 3; }
+  .email-box,
+  .linkedin-box,
+  .twitter-box {
+    border: 1.5px #fff solid;
+    border-radius: 9px;
+    padding: 1.7rem 0rem;
+    transition: all 0.3s ease-out; }
+    .email-box:hover,
+    .linkedin-box:hover,
+    .twitter-box:hover {
+      background: #06f0ce;
+      color: #000;
+      transition: all 0.3s ease-out; }
+      .email-box:hover span,
+      .linkedin-box:hover span,
+      .twitter-box:hover span {
+        color: #000; }
+  .email-box:hover {
+    padding: 3rem 5.5rem; }
+  .linkedin-box:hover {
+    padding: 3rem 4.5rem; }
+  .twitter-box:hover {
+    padding: 3rem 9rem; } }
 
-@media screen and (min-width: 860px) and (max-width: 908px) {
+@media screen and (min-width: 1230px) and (max-width: 1559px) {
   .boxes {
-    margin-top: 3.5rem; }
-    .boxes div {
-      font-size: 1rem;
-      padding: 1.5rem 1.5rem;
-      margin-bottom: 2.5rem; }
-      .boxes div:hover {
-        padding: 2rem 3.2rem; } }
-
-@media screen and (min-width: 1px) and (max-width: 859px) {
+    display: grid;
+    grid-gap: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto); }
+  .email-box {
+    grid-column: 1 / span 1;
+    grid-row: 1; }
+  .linkedin-box {
+    grid-column: 2 / span 1;
+    grid-row: 2; }
+  .twitter-box {
+    grid-column: 3 / span 1;
+    grid-row: 3; }
+  .email-box,
+  .linkedin-box,
+  .twitter-box {
+    border: 1.5px #fff solid;
+    border-radius: 9px;
+    padding: 1.7rem 0rem;
+    transition: all 0.3s ease-out; }
+    .email-box:hover,
+    .linkedin-box:hover,
+    .twitter-box:hover {
+      background: #06f0ce;
+      color: #000;
+      transition: all 0.3s ease-out; }
+      .email-box:hover span,
+      .linkedin-box:hover span,
+      .twitter-box:hover span {
+        color: #000; }
   .boxes {
-    margin-top: 3.5rem; }
-    .boxes div {
-      font-size: 1rem;
-      padding: 1.35rem 1.5rem;
-      margin-bottom: 2.65rem; }
-      .boxes div:hover {
-        padding: 2rem 3.75rem; } }
-
-@media screen and (min-width: 769px) and (max-width: 1170px) {
-  main .lg-heading {
-    font-size: 4.5rem; }
-  main .sm-heading {
-    margin-bottom: 1.6rem;
-    padding: 0.15rem 0.8rem; }
-  .about-info .bio {
+    grid-gap: 1.5rem;
     font-size: 1rem; }
-  .about-info .job {
-    font-size: 0.85rem; }
-  .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+  .email-box:hover {
+    padding: 2.5rem 7.5rem; }
+  .linkedin-box:hover {
+    padding: 2.5rem 7rem; }
+  .twitter-box:hover {
+    padding: 2.5rem 10rem; } }
 
-@media screen and (max-width: 768px) {
-  main {
+@media screen and (min-width: 1145px) and (max-width: 1229px) {
+  .boxes {
+    display: grid;
+    grid-gap: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto); }
+  .email-box {
+    grid-column: 1 / span 1;
+    grid-row: 1; }
+  .linkedin-box {
+    grid-column: 2 / span 1;
+    grid-row: 2; }
+  .twitter-box {
+    grid-column: 3 / span 1;
+    grid-row: 3; }
+  .email-box,
+  .linkedin-box,
+  .twitter-box {
+    border: 1.5px #fff solid;
+    border-radius: 9px;
+    padding: 1.7rem 0rem;
+    transition: all 0.3s ease-out; }
+    .email-box:hover,
+    .linkedin-box:hover,
+    .twitter-box:hover {
+      background: #06f0ce;
+      color: #000;
+      transition: all 0.3s ease-out; }
+      .email-box:hover span,
+      .linkedin-box:hover span,
+      .twitter-box:hover span {
+        color: #000; }
+  .boxes {
+    grid-gap: 1.5rem;
+    font-size: 1rem; }
+  .email-box:hover {
+    padding: 2.5rem 5.5rem; }
+  .linkedin-box:hover {
+    padding: 2.5rem 4.5rem; }
+  .twitter-box:hover {
+    padding: 2.5rem 7.5rem; } }
+
+@media screen and (min-width: 1025px) and (max-width: 1144px) {
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
-    text-align: center; }
-    main .lg-heading {
-      font-size: 4.1rem; }
-    main .sm-heading {
-      font-size: 1.22rem;
-      margin-bottom: 1rem;
-      padding: 0.2rem 0rem; }
-  nav.menu {
-    height: 100%;
-    width: 100%; }
-    nav.menu ul.menu-nav,
-    nav.menu div.menu-branding {
-      float: none;
-      width: 100%;
-      min-height: 0; }
-      nav.menu ul.menu-nav.show,
-      nav.menu div.menu-branding.show {
-        transform: translate3d(0, 0, 0); }
-    nav.menu .menu-nav {
-      height: 75%;
-      transform: translate3d(-100%, 0, 0); }
-    nav.menu .nav-item {
-      display: block;
-      position: inherit;
-      margin-top: 5%;
-      top: -22%;
-      margin-bottom: 10%; }
-    nav.menu .menu-branding {
-      height: 25%;
-      transform: translate3d(100%, 0, 0); }
-      nav.menu .menu-branding .portrait {
-        background: url(/dist/img/portrait_small.jpg);
-        width: 156px;
-        height: 156px; }
-  .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
-    grid-template-columns: 1fr; }
-    .about-info .bio-image {
-      background: url(/dist/img/portrait_small.jpg);
-      width: 156px;
-      height: 195px; }
-    .about-info .bio {
-      font-size: 1rem; }
-  .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    margin-top: 3.5rem; }
+    .boxes div {
+      font-size: 1rem;
+      border: 2px #fff solid;
+      border-radius: 9px;
+      margin-bottom: 2.65rem;
+      transition: all 0.3s ease-out; }
+      .boxes div:hover {
+        background: #06f0ce;
+        color: #000; }
+        .boxes div:hover span {
+          color: #000; }
+  .boxes div {
+    margin-right: 2rem;
+    margin-left: 2rem; }
+  .boxes .email-box {
+    padding: 1.7rem 2.5rem; }
+    .boxes .email-box:hover {
+      padding: 2.5rem 5.5rem; }
+  .boxes .linkedin-box {
+    padding: 1.7rem 1.75rem; }
+    .boxes .linkedin-box:hover {
+      padding: 2.5rem 4.5rem; }
+  .boxes .twitter-box {
+    padding: 1.7rem 5.2rem; }
+    .boxes .twitter-box:hover {
+      padding: 2.5rem 8.5rem; } }
 
-@media screen and (max-width: 500px) {
-  main {
-    padding: 2rem; }
-    main #home h1 {
-      margin-top: 10vh; }
-    main .lg-heading {
-      margin-top: 1rem;
-      font-size: 5rem; }
-  .projects {
-    grid-template-columns: 1fr; } }
+@media screen and (min-width: 930px) and (max-width: 1024px) {
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3.5rem; }
+    .boxes div {
+      font-size: 1rem;
+      border: 2px #fff solid;
+      border-radius: 9px;
+      margin-bottom: 2.65rem;
+      transition: all 0.3s ease-out; }
+      .boxes div:hover {
+        background: #06f0ce;
+        color: #000; }
+        .boxes div:hover span {
+          color: #000; }
+  .boxes div {
+    margin-right: 2rem; }
+  .boxes .email-box {
+    padding: 1.7rem 1.5rem; }
+    .boxes .email-box:hover {
+      padding: 2.5rem 4rem; }
+  .boxes .linkedin-box {
+    padding: 1.7rem 0.75rem; }
+    .boxes .linkedin-box:hover {
+      padding: 2.5rem 3rem; }
+  .boxes .twitter-box {
+    padding: 1.7rem 4.2rem; }
+    .boxes .twitter-box:hover {
+      padding: 2.5rem 7rem; } }
+
+@media screen and (min-width: 870px) and (max-width: 929px) {
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3.5rem; }
+    .boxes div {
+      font-size: 1rem;
+      border: 2px #fff solid;
+      border-radius: 9px;
+      margin-bottom: 2.65rem;
+      transition: all 0.3s ease-out; }
+      .boxes div:hover {
+        background: #06f0ce;
+        color: #000; }
+        .boxes div:hover span {
+          color: #000; }
+  .boxes .email-box {
+    padding: 1.5rem 1.5rem; }
+    .boxes .email-box:hover {
+      padding: 2.5rem 4rem; }
+  .boxes .linkedin-box {
+    padding: 1.5rem 0.75rem; }
+    .boxes .linkedin-box:hover {
+      padding: 2.5rem 3rem; }
+  .boxes .twitter-box {
+    padding: 1.5rem 4.2rem; }
+    .boxes .twitter-box:hover {
+      padding: 2.5rem 7rem; } }
+
+@media screen and (min-width: 540px) and (max-width: 869px) {
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3.5rem; }
+    .boxes div {
+      font-size: 1rem;
+      border: 2px #fff solid;
+      border-radius: 9px;
+      margin-bottom: 2.65rem;
+      transition: all 0.3s ease-out; }
+      .boxes div:hover {
+        background: #06f0ce;
+        color: #000; }
+        .boxes div:hover span {
+          color: #000; }
+  .boxes div {
+    margin-right: 4rem;
+    margin-left: 4rem; }
+  .boxes .email-box {
+    padding: 1.5rem 1.5rem; }
+    .boxes .email-box:hover {
+      padding: 2.5rem 4.5rem; }
+  .boxes .linkedin-box {
+    padding: 1.5rem 0.75rem; }
+    .boxes .linkedin-box:hover {
+      padding: 2.5rem 4rem; }
+  .boxes .twitter-box {
+    padding: 1.5rem 4.2rem; }
+    .boxes .twitter-box:hover {
+      padding: 2.5rem 7rem; } }
+
+@media screen and (min-width: 525px) and (max-width: 540px) {
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3.5rem; }
+    .boxes div {
+      font-size: 1rem;
+      border: 2px #fff solid;
+      border-radius: 9px;
+      margin-bottom: 2.65rem;
+      transition: all 0.3s ease-out; }
+      .boxes div:hover {
+        background: #06f0ce;
+        color: #000; }
+        .boxes div:hover span {
+          color: #000; }
+  .boxes .email-box {
+    padding: 1.5rem 1.5rem; }
+    .boxes .email-box:hover {
+      padding: 2.2rem 3.9rem; }
+  .boxes .linkedin-box {
+    padding: 1.5rem 0.75rem; }
+    .boxes .linkedin-box:hover {
+      padding: 2.2rem 3rem; }
+  .boxes .twitter-box {
+    padding: 1.5rem 4.2rem; }
+    .boxes .twitter-box:hover {
+      padding: 2.2rem 6.3rem; } }
+
+@media screen and (min-width: 1px) and (max-width: 526px) {
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3.5rem; }
+    .boxes div {
+      font-size: 1rem;
+      border: 2px #fff solid;
+      border-radius: 9px;
+      margin-bottom: 2.65rem;
+      transition: all 0.3s ease-out; }
+      .boxes div:hover {
+        background: #06f0ce;
+        color: #000; }
+        .boxes div:hover span {
+          color: #000; }
+  .boxes .email-box {
+    padding: 1.5rem 0.85rem; }
+    .boxes .email-box:hover {
+      padding: 2rem 3.25rem; }
+  .boxes .linkedin-box {
+    padding: 1.5rem 0.3rem; }
+    .boxes .linkedin-box:hover {
+      padding: 2rem 2.5rem; }
+  .boxes .twitter-box {
+    padding: 1.5rem 3.7rem; }
+    .boxes .twitter-box:hover {
+      padding: 2rem 6rem; } }

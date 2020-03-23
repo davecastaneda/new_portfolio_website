@@ -1,0 +1,42 @@
+.boxes {
+  display: grid;
+  grid-gap: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+}
+
+.email-box {
+  grid-column: 1 / span 1;
+  grid-row: 1;
+}
+
+.linkedin-box {
+  grid-column: 2 / span 1;
+  grid-row: 2;
+}
+
+.twitter-box {
+  grid-column: 3 / span 1;
+  grid-row: 3;
+}
+
+.email-box,
+.linkedin-box,
+.twitter-box {
+  border: 1.5px #fff solid;
+  border-radius: 9px;
+  padding: 1.7rem 0rem;
+  @include easeOut;
+
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+    @include easeOut;
+
+    span {
+      color: set-text-color($secondary-color);
+    }
+  }
+}
