@@ -8,16 +8,10 @@
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/davecastaneda/new_portfolio_website.git"
-  },
   "author": "Dave Castaneda",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/davecastaneda/new_portfolio_website/issues"
-  },
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1"
   }
 }
